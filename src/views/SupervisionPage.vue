@@ -8,6 +8,7 @@ import SupervisionScheduleView from '../components/supervision/SupervisionSchedu
 import SupervisionTable from '../components/supervision/SupervisionTable.vue'
 import listIcon from '../assets/教学督导/列表视图左侧.svg'
 import scheduleIcon from '../assets/教学督导/课表视图左侧.svg'
+import resetIcon from '../assets/教学督导/重置.svg'
 import { supervisionNavItems } from '../mocks/navigation'
 import {
   courseTimeOptions,
@@ -120,7 +121,7 @@ const resetScheduleRoom = () => {
               </select>
             </label>
             <button class="schedule-reset" type="reset">
-              <span class="reset-mark" aria-hidden="true"></span>
+              <img class="schedule-reset-icon" :src="resetIcon" alt="" aria-hidden="true" />
               <span>重置</span>
             </button>
           </form>
@@ -396,26 +397,10 @@ const resetScheduleRoom = () => {
   outline: none;
 }
 
-.reset-mark {
-  position: relative;
+.schedule-reset-icon {
   width: 16px;
   height: 16px;
-  border: 1.8px solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-.reset-mark::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -2px;
-  width: 6px;
-  height: 6px;
-  border-left: 1.8px solid currentColor;
-  border-bottom: 1.8px solid currentColor;
-  transform: rotate(35deg);
+  display: block;
 }
 
 @media (max-width: 900px) {

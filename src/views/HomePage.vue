@@ -43,9 +43,11 @@ import {
 .dashboard-main {
   position: relative;
   display: grid;
+  grid-auto-rows: max-content;
+  align-content: start;
   gap: 20px;
   margin-left: 220px;
-  padding: 76px 20px 28px 10px;
+  padding: 76px 10px 28px 10px;
   min-height: 100svh;
   box-sizing: border-box;
 }

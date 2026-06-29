@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import searchIcon from '../../assets/教学督导/搜索.svg'
+import resetIcon from '../../assets/教学督导/重置.svg'
 import CourseDatePicker from './CourseDatePicker.vue'
 import type { SelectOption } from '../../mocks/supervision'
 
@@ -97,11 +99,11 @@ const resetFilters = () => {
     </label>
 
     <button class="search-button" type="submit">
-      <span class="search-icon" aria-hidden="true"></span>
+      <img class="button-icon" :src="searchIcon" alt="" aria-hidden="true" />
       <span>搜索</span>
     </button>
     <button class="reset-button" type="reset">
-      <span class="reset-icon" aria-hidden="true"></span>
+      <img class="button-icon" :src="resetIcon" alt="" aria-hidden="true" />
       <span>重置</span>
     </button>
   </form>
@@ -111,7 +113,7 @@ const resetFilters = () => {
 .filters {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   padding: 8px 2px 10px;
   border-top: 1px solid rgba(229, 231, 235, 0.9);
   box-sizing: border-box;
@@ -132,7 +134,7 @@ const resetFilters = () => {
 
 select,
 .time-select-trigger {
-  height: 40px;
+  height: 36px;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   outline: none;
@@ -149,14 +151,14 @@ select,
 
 .time-select-control {
   position: relative;
-  width: 240px;
+  width: 160px;
 }
 
 .time-select-trigger {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 240px;
+  width: 160px;
   padding: 0 16px 0 14px;
   color: #191c1e;
   cursor: pointer;
@@ -185,7 +187,7 @@ select,
   top: calc(100% + 4px);
   left: 0;
   z-index: 30;
-  width: 240px;
+  width: 160px;
   height: 212px;
   padding: 16px 8px;
   border-radius: 8px;
@@ -197,7 +199,7 @@ select,
 .time-select-option {
   display: flex;
   align-items: center;
-  width: 224px;
+  width: 144px;
   height: 36px;
   padding: 0 16px;
   border: 0;
@@ -220,7 +222,7 @@ select,
 }
 
 select {
-  width: 240px;
+  width: 160px;
   padding: 0 38px 0 14px;
   color: #99a0ac;
   appearance: none;
@@ -228,8 +230,8 @@ select {
     linear-gradient(45deg, transparent 50%, #99a0ac 50%),
     linear-gradient(135deg, #99a0ac 50%, transparent 50%);
   background-position:
-    calc(100% - 19px) 17px,
-    calc(100% - 14px) 17px;
+    calc(100% - 19px) 15px,
+    calc(100% - 14px) 15px;
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
 }
@@ -239,13 +241,15 @@ select {
 }
 
 .keyword-field {
-  flex: 1 1 270px;
-  min-width: 220px;
+  flex: 0 0 250px;
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
 }
 
 .keyword-field input {
   width: 100%;
-  height: 40px;
+  height: 36px;
   padding: 0 14px;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
@@ -273,7 +277,7 @@ select {
   gap: 8px;
   flex: 0 0 auto;
   width: 82px;
-  height: 40px;
+  height: 36px;
   border-radius: 8px;
   border: 1px solid transparent;
   font: 500 14px/20px 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -305,49 +309,10 @@ select {
   border-color: #e5e7eb;
 }
 
-.search-icon,
-.reset-icon {
-  position: relative;
+.button-icon {
   width: 16px;
   height: 16px;
   display: block;
-  box-sizing: border-box;
-}
-
-.search-icon {
-  border: 1.8px solid currentColor;
-  border-radius: 50%;
-}
-
-.search-icon::after {
-  content: '';
-  position: absolute;
-  right: -3px;
-  bottom: -1px;
-  width: 7px;
-  height: 1.8px;
-  border-radius: 2px;
-  background: currentColor;
-  transform: rotate(45deg);
-  transform-origin: center;
-}
-
-.reset-icon {
-  border: 1.8px solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-}
-
-.reset-icon::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -2px;
-  width: 6px;
-  height: 6px;
-  border-left: 1.8px solid currentColor;
-  border-bottom: 1.8px solid currentColor;
-  transform: rotate(35deg);
 }
 
 @media (max-height: 820px) and (min-width: 901px) {
@@ -374,10 +339,6 @@ select {
   .filters {
     flex-wrap: wrap;
   }
-
-  .keyword-field {
-    flex-basis: 320px;
-  }
 }
 
 @media (max-width: 620px) {
@@ -393,6 +354,13 @@ select {
   .time-select-menu,
   select {
     width: 100%;
+  }
+
+  .keyword-field {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
   }
 
   .field {

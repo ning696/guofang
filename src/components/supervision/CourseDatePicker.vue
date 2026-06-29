@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import dateIcon from '../../assets/教学督导/课程日期.svg'
 
 interface CalendarDay {
   key: string
@@ -137,7 +138,7 @@ function formatDate(date: Date) {
       aria-label="课程日期"
       @click="togglePicker"
     >
-      <span class="date-icon" aria-hidden="true"></span>
+      <img class="date-icon" :src="dateIcon" alt="" aria-hidden="true" />
       <span class="date-value" :class="{ placeholder: !displayValue }">
         {{ displayValue || '请选择' }}
       </span>
@@ -186,15 +187,15 @@ function formatDate(date: Date) {
 .date-picker {
   position: relative;
   z-index: 25;
-  width: 278px;
+  width: 240px;
   font: 400 14px/20px 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 .date-trigger {
   display: flex;
   align-items: center;
-  width: 278px;
-  height: 44px;
+  width: 240px;
+  height: 36px;
   padding: 0 16px 0 44px;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
@@ -218,32 +219,12 @@ function formatDate(date: Date) {
 
 .date-icon {
   position: absolute;
-  top: 15px;
-  left: 18px;
-  width: 14px;
-  height: 14px;
-  border: 1.6px solid #99a0ac;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-.date-icon::before,
-.date-icon::after {
-  content: '';
-  position: absolute;
-  top: -4px;
-  width: 1.6px;
-  height: 5px;
-  border-radius: 1px;
-  background: #99a0ac;
-}
-
-.date-icon::before {
-  left: 3px;
-}
-
-.date-icon::after {
-  right: 3px;
+  top: 8px;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  pointer-events: none;
 }
 
 .date-value {

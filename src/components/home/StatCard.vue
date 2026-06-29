@@ -1,9 +1,18 @@
 <script setup lang="ts">
 import type { StatCard as StatCardData } from '../../mocks/home'
+import patrolIcon from '../../assets/首页/巡课次数.svg'
+import reviewIcon from '../../assets/首页/评价次数.svg'
+import teacherIcon from '../../assets/首页/评价教员数量.svg'
 
 defineProps<{
   stat: StatCardData
 }>()
+
+const statIcons: Record<StatCardData['type'], string> = {
+  patrol: patrolIcon,
+  review: reviewIcon,
+  teacher: teacherIcon,
+}
 </script>
 
 <template>
@@ -12,9 +21,7 @@ defineProps<{
       <span>{{ stat.label }}</span>
       <strong>{{ stat.value }}</strong>
     </div>
-    <div class="stat-icon" aria-hidden="true">
-      <!-- 占位，后续替换为实际图标 -->
-    </div>
+    <img class="stat-icon" :src="statIcons[stat.type]" alt="" aria-hidden="true" />
   </article>
 </template>
 
@@ -24,53 +31,56 @@ defineProps<{
   min-width: 0;
   height: 140px;
   overflow: hidden;
-  border-radius: 16px;
-  background: #e8ebf5;
+  border-radius: 12px;
 }
 
 .stat-copy {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 28px;
+  left: 40px;
   z-index: 2;
   display: grid;
-  gap: 8px;
+  gap: 18px;
 }
 
 span {
-  color: #5e6881;
-  font: 400 14px/20px 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #373737;
+  font: 400 16px/22px 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 strong {
-  color: #1a1d26;
-  font: 700 48px/56px 'DIN Alternate', 'Arial Narrow', 'PingFang SC', sans-serif;
+  color: #000000;
+  font: 600 34px/48px 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
 .stat-icon {
   position: absolute;
-  top: 20px;
-  right: 24px;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  top: 50%;
+  right: 20px;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  pointer-events: none;
+  transform: translateY(-50%);
 }
 
-/* 巡课次数 - 浅紫色背景 */
 .type-patrol {
-  background: linear-gradient(135deg, #e8ebf5 0%, #dfe3f2 100%);
+  background: linear-gradient(165deg, #d1dcfd 12%, #e5ecff 50%, #d1dcfd 88%);
+  box-shadow:
+    0px 4px 10px 0px rgba(0, 49, 185, 0.0359),
+    inset 0px 1px 20px 0px rgba(181, 189, 247, 0.2544);
 }
 
-/* 评价次数 - 浅青色背景 */
-.type-teacher {
-  background: linear-gradient(135deg, #d7f2f5 0%, #c9eef3 100%);
-}
-
-/* 评价教员数量 - 浅蓝紫色背景 */
 .type-review {
-  background: linear-gradient(135deg, #e8e5f8 0%, #ddd9f3 100%);
+  background: linear-gradient(165deg, #d5f1fa 12%, #e8f9ff 50%, #d5f1fa 88%);
+  box-shadow:
+    0px 4px 10px 0px rgba(0, 49, 185, 0.0359),
+    inset 0px 1px 20px 0px rgba(150, 205, 223, 0.3344);
+}
+
+.type-teacher {
+  background: linear-gradient(165deg, #dfdbfe 12%, #f1efff 50%, #dfdbfe 88%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 49, 185, 0.0359);
 }
 
 @media (max-width: 720px) {
@@ -78,9 +88,21 @@ strong {
     height: 128px;
   }
 
+  .stat-copy {
+    top: 24px;
+    left: 24px;
+    gap: 14px;
+  }
+
   strong {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .stat-icon {
+    right: 8px;
+    width: 112px;
+    height: 112px;
   }
 }
 </style>

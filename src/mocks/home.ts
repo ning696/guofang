@@ -77,8 +77,8 @@ export const recentPatrols: PatrolRecord[] = [
 
 export const stats: StatCard[] = [
   { label: '巡课次数', value: 139, type: 'patrol' },
-  { label: '评价教师数量', value: 36, type: 'teacher' },
   { label: '评价次数', value: 95, type: 'review' },
+  { label: '评价教员数量', value: 36, type: 'teacher' },
 ]
 
 export const supervisionActions: SupervisionAction[] = [

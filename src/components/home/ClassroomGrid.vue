@@ -29,8 +29,8 @@ defineProps<{
 <style scoped>
 .classroom-panel {
   position: relative;
-  height: 420px;
-  padding: 24px 30px 30px;
+  max-height: 420px;
+  padding: 24px 30px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -43,8 +43,9 @@ h2 {
 }
 
 .classroom-scroll-container {
-  flex: 1;
+  flex: 0 1 auto;
   min-height: 0;
+  max-height: 284px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 18px;
@@ -69,19 +70,12 @@ h2 {
 
 .classroom-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(180px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
   gap: 20px;
 }
 
 .scrollbar-track {
-  position: absolute;
-  top: 80px;
-  right: 6px;
-  width: 6px;
-  height: 310px;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.02);
-  pointer-events: none;
+  display: none;
 }
 
 .scrollbar-thumb {
@@ -94,24 +88,20 @@ h2 {
   background: rgba(0, 0, 0, 0.08);
 }
 
-@media (min-width: 1500px) {
-  .classroom-grid {
-    grid-template-columns: repeat(6, 250px);
-  }
-}
-
 @media (max-width: 1320px) {
   .classroom-grid {
-    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
 }
 
 @media (max-width: 1040px) {
   .classroom-panel {
+    max-height: none;
     height: auto;
   }
 
   .classroom-scroll-container {
+    max-height: none;
     overflow-y: visible;
   }
 
