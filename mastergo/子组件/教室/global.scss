@@ -1,0 +1,100 @@
+.frame {
+    width: 250px;
+    height: 80px;
+    overflow: hidden;
+    .group {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 250px;
+        height: 80px;
+        .rectangle {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 250px;
+            height: 80px;
+            box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+            border-radius: 12px;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+        }
+        .ellipse {
+            position: absolute;
+            top: -222px;
+            left: -218px;
+            right: -2px;
+            bottom: -168px;
+            width: 134px;
+            height: 134px;
+        }
+        .ellipse-1 {
+            position: absolute;
+            top: -169px;
+            left: -43px;
+            right: -204px;
+            bottom: -248px;
+            width: 215px;
+            height: 215px;
+        }
+        .frame-1 {
+            position: absolute;
+            top: 8px;
+            left: 159px;
+            right: 8px;
+            bottom: -3px;
+            width: 83px;
+            height: 75px;
+            opacity: 0.6000000238418579;
+            overflow: hidden;
+            .pen {
+                position: absolute;
+                top: 15px;
+                left: 34px;
+                right: 6px;
+                bottom: 0px;
+                width: 42.74px;
+                height: 59.56px;
+            }
+            .pen-1 {
+                position: absolute;
+                top: -2px;
+                left: 0px;
+                right: -4px;
+                bottom: -1px;
+                width: 83px;
+                height: 75px;
+            }
+            .rectangle-1 {
+                position: absolute;
+                top: 24.82px;
+                left: 19.3px;
+                right: 38.6px;
+                bottom: 43.01px;
+                width: 25.1px;
+                height: 7.17px;
+                box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                border-radius: 4.41px;
+                background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                border: 0.55px solid #FFFFFF;
+            }
+            .rectangle-2 {
+                position: absolute;
+                top: 45.77px;
+                left: 19.3px;
+                right: 38.6px;
+                bottom: 22.06px;
+                width: 25.1px;
+                height: 7.17px;
+                box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                border-radius: 4.41px;
+                background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                border: 0.55px solid #FFFFFF;
+            }
+        }
+    }
+}

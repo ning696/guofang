@@ -1,0 +1,4517 @@
+.frame {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #F8F9FC;
+    .frame-1 {
+        position: absolute;
+        top: -618px;
+        left: -573px;
+        right: -711px;
+        bottom: -538px;
+        width: 3204px;
+        height: 2236px;
+        overflow: hidden;
+        .ellipse {
+            position: absolute;
+            top: 124px;
+            left: 936px;
+            right: 1002px;
+            bottom: 846px;
+            width: 966px;
+            height: 966px;
+        }
+        .ellipse-1 {
+            position: absolute;
+            top: 124px;
+            left: 426px;
+            right: 1512px;
+            bottom: 846px;
+            width: 966px;
+            height: 966px;
+        }
+        .ellipse-2 {
+            position: absolute;
+            top: 258px;
+            left: -150px;
+            right: 2088px;
+            bottom: 712px;
+            width: 966px;
+            height: 966px;
+        }
+        .ellipse-3 {
+            position: absolute;
+            top: 124px;
+            left: -134px;
+            right: 2072px;
+            bottom: 846px;
+            width: 966px;
+            height: 966px;
+        }
+        .ellipse-4 {
+            position: absolute;
+            top: -150px;
+            left: 1634px;
+            right: 67px;
+            bottom: 883px;
+            width: 1203px;
+            height: 1203px;
+        }
+        .ellipse-5 {
+            position: absolute;
+            top: 883px;
+            left: 1094px;
+            right: -150px;
+            bottom: -150px;
+            width: 1960px;
+            height: 1203px;
+        }
+        .ellipse-6 {
+            position: absolute;
+            top: 883px;
+            left: 29px;
+            right: 1672px;
+            bottom: -150px;
+            width: 1203px;
+            height: 1203px;
+        }
+        .rectangle-5306371712 {
+            position: absolute;
+            top: 1095px;
+            left: 1569px;
+            right: 1155px;
+            bottom: 98px;
+            width: 480px;
+            height: 1043px;
+            transform-origin: 0 0;
+            transform: rotate(-90deg);
+            opacity: 0.800000011920929;
+        }
+        .rectangle {
+            position: absolute;
+            top: 1215px;
+            left: 1904px;
+            right: 820px;
+            bottom: -22px;
+            width: 480px;
+            height: 1043px;
+            transform-origin: 0 0;
+            transform: rotate(90deg);
+            opacity: 0.4000000059604645;
+        }
+    }
+    .rectangle-1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 1700px;
+        bottom: 0px;
+        width: 220px;
+        height: 1080px;
+        opacity: 0;
+        box-shadow: 6px 0px 10px 0px rgba(190, 198, 223, 0.2);
+        background: #FFFFFF;
+    }
+    .group {
+        position: absolute;
+        top: 660px;
+        left: 19px;
+        width: 180px;
+        height: 44px;
+        .rectangle-2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .frame-2 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            width: 16px;
+            height: 16px;
+        }
+        .rectangle-3 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    .group-1 {
+        position: absolute;
+        top: 710px;
+        left: 20px;
+        right: 1720px;
+        bottom: 326px;
+        width: 180px;
+        height: 44px;
+        .rectangle-4 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .text-1 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .frame-3 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            right: 144px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .frame-5 {
+        position: absolute;
+        top: 760px;
+        left: 20px;
+        right: 1720px;
+        bottom: 276px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-5 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-6 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-2 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .frame-6 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .group-2 {
+        position: absolute;
+        top: 110px;
+        left: 20px;
+        right: 1720px;
+        bottom: 926px;
+        width: 180px;
+        height: 44px;
+        .rectangle-7 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            box-shadow: 0px 6px 16px 0px rgba(0, 71, 255, 0.3);
+            border-radius: 8px;
+            background: #1947FF;
+        }
+        .rectangle-8 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-3 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 104px;
+            bottom: 12px;
+            width: 28px;
+            height: 20px;
+            white-space: nowrap;
+            color: #FFFFFF;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+        .frame-7 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            right: 144px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .frame-8 {
+        position: absolute;
+        top: 460px;
+        left: 20px;
+        right: 1720px;
+        bottom: 576px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-9 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-10 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-4 {
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            right: 66px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    .frame-9 {
+        position: absolute;
+        top: 410px;
+        left: 20px;
+        right: 1720px;
+        bottom: 626px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-11 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-12 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-5 {
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            right: 66px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    .frame-10 {
+        position: absolute;
+        top: 360px;
+        left: 20px;
+        right: 1720px;
+        bottom: 676px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-13 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-14 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-6 {
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            right: 66px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    .frame-11 {
+        position: absolute;
+        top: 310px;
+        left: 20px;
+        right: 1720px;
+        bottom: 726px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-15 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-16 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-7 {
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            right: 66px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    .frame-12 {
+        position: absolute;
+        top: 260px;
+        left: 20px;
+        right: 1720px;
+        bottom: 776px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-17 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .frame-13 {
+            position: absolute;
+            top: 14px;
+            left: 154px;
+            right: 10px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+        }
+        .rectangle-18 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-8 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .frame-15 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            right: 144px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .frame-17 {
+        position: absolute;
+        top: 210px;
+        left: 20px;
+        right: 1720px;
+        bottom: 826px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-19 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-20 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-9 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .frame-18 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            right: 144px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            .rectangle-21 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 16px;
+                height: 16px;
+            }
+            .group-3 {
+                position: absolute;
+                top: 2px;
+                left: 0px;
+                right: 0px;
+                bottom: 2px;
+                width: 14px;
+                height: 10px;
+            }
+        }
+    }
+    .text-10 {
+        position: absolute;
+        top: 26px;
+        left: 240px;
+        right: 1520px;
+        bottom: 1030px;
+        width: 160px;
+        height: 24px;
+        white-space: nowrap;
+        color: #022170;
+        font-family: "PingFang SC";
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    .frame-19 {
+        position: absolute;
+        top: 20px;
+        left: 28px;
+        width: 153px;
+        height: 48px;
+    }
+    .group-19 {
+        position: absolute;
+        top: 752px;
+        left: 230px;
+        width: 1670px;
+        height: 200px;
+        .rectangle-22 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 1670px;
+            height: 200px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .group-20 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 523px;
+            height: 140px;
+            .rectangle-23 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 523px;
+                height: 140px;
+                box-shadow: inset 0px 1px 20px 0px rgba(181, 189, 247, 0.25), 0px 4px 10px 0px rgba(0, 49, 185, 0.04);
+                border-radius: 12px;
+                background: linear-gradient(176deg, rgba(209, 220, 253, 1) 0%, rgba(229, 236, 255, 1) 50%, rgba(209, 220, 253, 1) 100%);
+            }
+            .frame-20 {
+                position: absolute;
+                top: 0px;
+                left: 363px;
+                width: 140px;
+                height: 140px;
+                overflow: hidden;
+                .rectangle-24 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 140px;
+                    height: 140px;
+                    background: #D8D8D8;
+                }
+                .group-21 {
+                    position: absolute;
+                    top: 30px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 28px;
+                    width: 110px;
+                    height: 82px;
+                    .pen-184 {
+                        position: absolute;
+                        top: 42px;
+                        left: -30px;
+                        right: -30px;
+                        bottom: -30px;
+                        width: 110px;
+                        height: 10px;
+                    }
+                    .group-22 {
+                        position: absolute;
+                        top: 0px;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 2px;
+                        width: 80px;
+                        height: 80px;
+                        .rectangle-25 {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            right: 0px;
+                            bottom: 0px;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 10.67px;
+                        }
+                        .group-23 {
+                            position: absolute;
+                            top: 8px;
+                            left: 10.67px;
+                            right: 10.66px;
+                            bottom: 8px;
+                            width: 58.67px;
+                            height: 64px;
+                            .rectangle-26 {
+                                position: absolute;
+                                top: 16px;
+                                left: 18.67px;
+                                right: 0px;
+                                bottom: 0px;
+                                width: 40px;
+                                height: 48px;
+                                border-radius: 6.67px 6.67px 17.33px 6.67px;
+                                background: linear-gradient(153deg, rgba(122, 166, 255, 1) 0%, rgba(38, 25, 255, 1) 100%);
+                            }
+                            .rectangle-27 {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                right: 10.67px;
+                                bottom: 10.67px;
+                                width: 48px;
+                                height: 53.33px;
+                                backdrop-filter: blur(11.11px);
+                                border-radius: 6.67px 6.67px 17.33px 6.67px;
+                                background: linear-gradient(rgba(255, 255, 255, 0.18)), rgba(255, 255, 255, 0.18);
+                                border: 1.11px solid rgba(255, 255, 255, 0.7);
+                            }
+                            .pen-185 {
+                                position: absolute;
+                                top: 5px;
+                                left: 15.33px;
+                                right: 10.34px;
+                                bottom: 31px;
+                                width: 17.78px;
+                                height: 12.2px;
+                            }
+                            .rectangle-28 {
+                                position: absolute;
+                                top: 41.78px;
+                                left: 22px;
+                                right: 25.56px;
+                                bottom: 18.22px;
+                                width: 11.11px;
+                                height: 4px;
+                                transform-origin: 0 0;
+                                transform: rotate(-90deg);
+                                box-shadow: 0px 1px 4px 0px rgba(0, 81, 233, 0.26);
+                                border-radius: 10.67px;
+                                background: #FFFFFF;
+                            }
+                            .rectangle-29 {
+                                position: absolute;
+                                top: 41.78px;
+                                left: 12px;
+                                right: 24.45px;
+                                bottom: 18.22px;
+                                width: 22.22px;
+                                height: 4px;
+                                transform-origin: 0 0;
+                                transform: rotate(-90deg);
+                                box-shadow: 0px 1px 4px 0px rgba(0, 81, 233, 0.26);
+                                border-radius: 10.67px;
+                                background: #FFFFFF;
+                            }
+                            .rectangle-30 {
+                                position: absolute;
+                                top: 41.78px;
+                                left: 32px;
+                                right: 12.23px;
+                                bottom: 18.22px;
+                                width: 14.44px;
+                                height: 4px;
+                                transform-origin: 0 0;
+                                transform: rotate(-90deg);
+                                box-shadow: 0px 1px 4px 0px rgba(0, 81, 233, 0.26);
+                                border-radius: 10.67px;
+                                background: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            .text-139 {
+                position: absolute;
+                top: 68px;
+                left: 40px;
+                right: 428px;
+                bottom: 24px;
+                width: 55px;
+                height: 48px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 34px;
+                line-height: 48px;
+                font-weight: 600;
+            }
+            .text-11 {
+                position: absolute;
+                top: 28px;
+                left: 40px;
+                right: 419px;
+                bottom: 90px;
+                width: 64px;
+                height: 22px;
+                white-space: nowrap;
+                color: #373737;
+                font-family: "PingFang SC";
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+        }
+        .group-24 {
+            position: absolute;
+            top: 30px;
+            left: 1116px;
+            width: 523px;
+            height: 140px;
+            .rectangle-31 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 523px;
+                height: 140px;
+                box-shadow: 0px 4px 10px 0px rgba(0, 49, 185, 0.04);
+                border-radius: 12px;
+                background: linear-gradient(176deg, rgba(223, 219, 254, 1) 0%, rgba(241, 239, 255, 1) 50%, rgba(223, 219, 254, 1) 100%);
+            }
+            .frame-21 {
+                position: absolute;
+                top: 0px;
+                left: 363px;
+                width: 140px;
+                height: 140px;
+                overflow: hidden;
+                .rectangle-32 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 140px;
+                    height: 140px;
+                    background: #D8D8D8;
+                }
+                .group-25 {
+                    position: absolute;
+                    top: 30px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 28px;
+                    width: 110px;
+                    height: 82px;
+                    .pen-186 {
+                        position: absolute;
+                        top: 42px;
+                        left: -30px;
+                        right: -30px;
+                        bottom: -30px;
+                        width: 110px;
+                        height: 10px;
+                    }
+                    .group-26 {
+                        position: absolute;
+                        top: 0px;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 2px;
+                        width: 80px;
+                        height: 80px;
+                        .rectangle-33 {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            right: 0px;
+                            bottom: 0px;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 10.67px;
+                        }
+                        .group-27 {
+                            position: absolute;
+                            top: 6.61px;
+                            left: 7.8px;
+                            right: 9.23px;
+                            bottom: 4.05px;
+                            width: 62.97px;
+                            height: 69.34px;
+                            .rectangle-34 {
+                                position: absolute;
+                                top: 11.39px;
+                                left: 0px;
+                                right: 18.97px;
+                                bottom: 9.95px;
+                                width: 44px;
+                                height: 48px;
+                                transform-origin: 0 0;
+                                transform: rotate(-15deg);
+                                border-radius: 6.67px 6.67px 17.33px 6.67px;
+                                background: linear-gradient(214deg, rgba(177, 161, 255, 1) 0%, rgba(66, 59, 255, 1) 100%);
+                            }
+                            .rectangle-35 {
+                                position: absolute;
+                                top: 10.73px;
+                                left: 13.53px;
+                                right: 4.11px;
+                                bottom: 6.61px;
+                                width: 45.33px;
+                                height: 52px;
+                                backdrop-filter: blur(11.11px);
+                                border-radius: 6.67px 6.67px 17.33px 6.67px;
+                                background: linear-gradient(rgba(255, 255, 255, 0.18)), rgba(255, 255, 255, 0.18);
+                                border: 1.11px solid rgba(255, 255, 255, 0.7);
+                            }
+                            .group-28 {
+                                position: absolute;
+                                top: 13.39px;
+                                left: 16.2px;
+                                right: 13.77px;
+                                bottom: 22.95px;
+                                width: 20px;
+                                height: 20.67px;
+                            }
+                            .group-29 {
+                                position: absolute;
+                                top: 36.12px;
+                                left: 51.42px;
+                                right: -1.78px;
+                                bottom: 2.55px;
+                                width: 13.33px;
+                                height: 30.67px;
+                                transform-origin: 0 0;
+                                transform: rotate(30deg);
+                                .pen-188 {
+                                    position: absolute;
+                                    top: 6.99px;
+                                    left: -13.55px;
+                                    right: -0.12px;
+                                    bottom: -10.32px;
+                                    width: 13.33px;
+                                    height: 30.67px;
+                                    transform-origin: 0 0;
+                                    transform: rotate(-30deg);
+                                }
+                                .rectangle-36 {
+                                    position: absolute;
+                                    top: 4px;
+                                    left: 2.67px;
+                                    right: 2.66px;
+                                    bottom: 24px;
+                                    width: 8px;
+                                    height: 2.67px;
+                                    box-shadow: 0px 1px 4px 0px rgba(0, 81, 233, 0.26);
+                                    border-radius: 10.67px;
+                                    background: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .text-36 {
+                position: absolute;
+                top: 68px;
+                left: 40px;
+                right: 442px;
+                bottom: 24px;
+                width: 41px;
+                height: 48px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 34px;
+                line-height: 48px;
+                font-weight: 600;
+            }
+            .text-12 {
+                position: absolute;
+                top: 28px;
+                left: 40px;
+                right: 387px;
+                bottom: 90px;
+                width: 96px;
+                height: 22px;
+                white-space: nowrap;
+                color: #373737;
+                font-family: "PingFang SC";
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+        }
+        .group-30 {
+            position: absolute;
+            top: 30px;
+            left: 573px;
+            width: 523px;
+            height: 140px;
+            .rectangle-37 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 523px;
+                height: 140px;
+                box-shadow: 0px 4px 10px 0px rgba(0, 49, 185, 0.04), inset 0px 1px 20px 0px rgba(150, 205, 223, 0.33);
+                border-radius: 12px;
+                background: linear-gradient(176deg, rgba(213, 241, 250, 1) 0%, rgba(232, 249, 255, 1) 50%, rgba(213, 241, 250, 1) 100%);
+            }
+            .frame-22 {
+                position: absolute;
+                top: 0px;
+                left: 363px;
+                width: 140px;
+                height: 140px;
+                overflow: hidden;
+                .rectangle-38 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 140px;
+                    height: 140px;
+                    background: #D8D8D8;
+                }
+                .group-31 {
+                    position: absolute;
+                    top: 30px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 28px;
+                    width: 110px;
+                    height: 82px;
+                    .pen-189 {
+                        position: absolute;
+                        top: 42px;
+                        left: -30px;
+                        right: -30px;
+                        bottom: -30px;
+                        width: 110px;
+                        height: 10px;
+                    }
+                    .group-32 {
+                        position: absolute;
+                        top: 0px;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 2px;
+                        width: 80px;
+                        height: 80px;
+                        .rectangle-39 {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            right: 0px;
+                            bottom: 0px;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 10.67px;
+                        }
+                        .group-33 {
+                            position: absolute;
+                            top: 13px;
+                            left: 8px;
+                            right: 8px;
+                            bottom: 10px;
+                            width: 64px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+            .text-95 {
+                position: absolute;
+                top: 68px;
+                left: 40px;
+                right: 442px;
+                bottom: 24px;
+                width: 41px;
+                height: 48px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 34px;
+                line-height: 48px;
+                font-weight: 600;
+            }
+            .text-13 {
+                position: absolute;
+                top: 28px;
+                left: 40px;
+                right: 419px;
+                bottom: 90px;
+                width: 64px;
+                height: 22px;
+                white-space: nowrap;
+                color: #373737;
+                font-family: "PingFang SC";
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+        }
+    }
+    .group-35 {
+        position: absolute;
+        top: 516px;
+        left: 230px;
+        right: 410px;
+        bottom: 348px;
+        width: 1280px;
+        height: 216px;
+        .group-36 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 1280px;
+            height: 216px;
+            .rectangle-40 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 1280px;
+                height: 216px;
+                border-radius: 18px;
+                background: rgba(255, 255, 255, 0.6);
+            }
+            .frame-23 {
+                position: absolute;
+                top: 72px;
+                left: 1230px;
+                right: -170px;
+                bottom: 24px;
+                width: 220px;
+                height: 120px;
+                overflow: hidden;
+                .rectangle-41 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 220px;
+                    height: 120px;
+                    border-radius: 12px;
+                    background: linear-gradient(0deg, rgba(239, 245, 253, 1) 0%, rgba(235, 240, 253, 1) 100%);
+                    border: 1px solid #E3E9F6;
+                }
+                .frame-24 {
+                    position: absolute;
+                    top: 22px;
+                    left: 25px;
+                    right: 25px;
+                    bottom: 21px;
+                    width: 170px;
+                    height: 77px;
+                    overflow: hidden;
+                    .text-14 {
+                        position: absolute;
+                        top: 0px;
+                        left: -10.63px;
+                        right: -10.62px;
+                        bottom: 52px;
+                        width: 191.25px;
+                        height: 25px;
+                        color: #000000;
+                        font-family: "PingFang SC";
+                        font-size: 18px;
+                        line-height: 25px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                    .text-15 {
+                        position: absolute;
+                        top: 31px;
+                        left: 51.94px;
+                        right: 51.95px;
+                        bottom: 26px;
+                        width: 66.11px;
+                        height: 20px;
+                        color: #373737;
+                        font-family: "PingFang SC";
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                    .text-16 {
+                        position: absolute;
+                        top: 57px;
+                        left: 51.94px;
+                        right: 51.95px;
+                        bottom: 0px;
+                        width: 66.11px;
+                        height: 20px;
+                        color: #373737;
+                        font-family: "PingFang SC";
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .text-17 {
+            position: absolute;
+            top: 24px;
+            left: 30px;
+            right: 1154px;
+            bottom: 160px;
+            width: 96px;
+            height: 32px;
+            white-space: nowrap;
+            color: #191C1E;
+            font-family: "PingFang SC";
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+        .frame-25 {
+            position: absolute;
+            top: 72px;
+            left: 990px;
+            right: 70px;
+            bottom: 24px;
+            width: 220px;
+            height: 120px;
+            overflow: hidden;
+            .rectangle-42 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 220px;
+                height: 120px;
+                border-radius: 12px;
+                background: linear-gradient(0deg, rgba(239, 245, 253, 1) 0%, rgba(235, 240, 253, 1) 100%);
+                border: 1px solid #E3E9F6;
+            }
+            .frame-26 {
+                position: absolute;
+                top: 22px;
+                left: 38px;
+                right: 38px;
+                bottom: 21px;
+                width: 144px;
+                height: 77px;
+                overflow: hidden;
+                .text-18 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 52px;
+                    width: 144px;
+                    height: 25px;
+                    white-space: nowrap;
+                    color: #000000;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                .text-19 {
+                    position: absolute;
+                    top: 31px;
+                    left: 44px;
+                    right: 44px;
+                    bottom: 26px;
+                    width: 56px;
+                    height: 20px;
+                    white-space: nowrap;
+                    color: #373737;
+                    font-family: "PingFang SC";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                .text-20 {
+                    position: absolute;
+                    top: 57px;
+                    left: 44px;
+                    right: 44px;
+                    bottom: 0px;
+                    width: 56px;
+                    height: 20px;
+                    white-space: nowrap;
+                    color: #373737;
+                    font-family: "PingFang SC";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        }
+        .group-37 {
+            position: absolute;
+            top: 72px;
+            left: 750px;
+            right: 310px;
+            bottom: 24px;
+            width: 220px;
+            height: 120px;
+            .rectangle-43 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 220px;
+                height: 120px;
+                box-shadow: 0px 10px 20px 0px rgba(190, 198, 223, 0.5);
+                border-radius: 12px;
+                background: linear-gradient(0deg, rgba(239, 245, 253, 1) 0%, rgba(235, 240, 253, 1) 100%);
+                border: 1px solid #1947FF;
+            }
+            .frame-27 {
+                position: absolute;
+                top: 22px;
+                left: 72px;
+                right: 72px;
+                bottom: 21px;
+                width: 76px;
+                height: 77px;
+                overflow: hidden;
+                .text-21 {
+                    position: absolute;
+                    top: 0px;
+                    left: 2px;
+                    right: 2px;
+                    bottom: 52px;
+                    width: 72px;
+                    height: 25px;
+                    white-space: nowrap;
+                    color: #000000;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                .text-22 {
+                    position: absolute;
+                    top: 31px;
+                    left: 17px;
+                    right: 17px;
+                    bottom: 26px;
+                    width: 42px;
+                    height: 20px;
+                    white-space: nowrap;
+                    color: #373737;
+                    font-family: "PingFang SC";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                .text-23 {
+                    position: absolute;
+                    top: 57px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 76px;
+                    height: 20px;
+                    white-space: nowrap;
+                    color: #373737;
+                    font-family: "PingFang SC";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        }
+        .frame-28 {
+            position: absolute;
+            top: 72px;
+            left: 510px;
+            right: 550px;
+            bottom: 24px;
+            width: 220px;
+            height: 120px;
+            overflow: hidden;
+            .rectangle-44 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 220px;
+                height: 120px;
+                border-radius: 12px;
+                background: linear-gradient(0deg, rgba(239, 245, 253, 1) 0%, rgba(235, 240, 253, 1) 100%);
+                border: 1px solid #E3E9F6;
+            }
+            .text-24 {
+                position: absolute;
+                top: 48px;
+                left: 56px;
+                right: 56px;
+                bottom: 47px;
+                width: 108px;
+                height: 25px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+        .frame-29 {
+            position: absolute;
+            top: 72px;
+            left: 270px;
+            right: 790px;
+            bottom: 24px;
+            width: 220px;
+            height: 120px;
+            overflow: hidden;
+            .rectangle-45 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 220px;
+                height: 120px;
+                border-radius: 12px;
+                background: linear-gradient(0deg, rgba(239, 245, 253, 1) 0%, rgba(235, 240, 253, 1) 100%);
+                border: 1px solid #E3E9F6;
+            }
+            .text-25 {
+                position: absolute;
+                top: 48px;
+                left: 56px;
+                right: 56px;
+                bottom: 47px;
+                width: 108px;
+                height: 25px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+        .frame-30 {
+            position: absolute;
+            top: 72px;
+            left: 30px;
+            right: 1030px;
+            bottom: 24px;
+            width: 220px;
+            height: 120px;
+            overflow: hidden;
+            .rectangle-46 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 220px;
+                height: 120px;
+                border-radius: 12px;
+                background: linear-gradient(0deg, rgba(239, 245, 253, 1) 0%, rgba(235, 240, 253, 1) 100%);
+                border: 1px solid #E3E9F6;
+            }
+            .frame-31 {
+                position: absolute;
+                top: 22px;
+                left: 72px;
+                right: 72px;
+                bottom: 21px;
+                width: 76px;
+                height: 77px;
+                overflow: hidden;
+                .text-26 {
+                    position: absolute;
+                    top: 0px;
+                    left: 2px;
+                    right: 2px;
+                    bottom: 52px;
+                    width: 72px;
+                    height: 25px;
+                    white-space: nowrap;
+                    color: #000000;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+                .text-27 {
+                    position: absolute;
+                    top: 31px;
+                    left: 17px;
+                    right: 17px;
+                    bottom: 26px;
+                    width: 42px;
+                    height: 20px;
+                    white-space: nowrap;
+                    color: #373737;
+                    font-family: "PingFang SC";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                .text-28 {
+                    position: absolute;
+                    top: 57px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 76px;
+                    height: 20px;
+                    white-space: nowrap;
+                    color: #373737;
+                    font-family: "PingFang SC";
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+        }
+        .group-38 {
+            position: absolute;
+            top: 163px;
+            left: 919px;
+            right: 345px;
+            bottom: 33px;
+            width: 8px;
+            height: 12px;
+        }
+    }
+    .group-39 {
+        position: absolute;
+        top: 76px;
+        left: 230px;
+        width: 1670px;
+        height: 420px;
+        .group-40 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1670px;
+            height: 420px;
+            .rectangle-47 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 1670px;
+                height: 420px;
+                border-radius: 18px;
+                background: rgba(255, 255, 255, 0.6);
+            }
+            .rectangle-48 {
+                position: absolute;
+                top: 80px;
+                left: 1658px;
+                right: 6px;
+                bottom: 230px;
+                width: 6px;
+                height: 110px;
+                opacity: 0.07999999821186066;
+                border-radius: 8px;
+                background: #000000;
+            }
+            .group-41 {
+                position: absolute;
+                top: 80px;
+                left: 30px;
+                width: 250px;
+                height: 80px;
+                .frame-32 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 250px;
+                    height: 80px;
+                    overflow: hidden;
+                    .rectangle-49 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-8 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-9 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-33 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-197 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-198 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-50 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-51 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .a-101 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 177px;
+                    bottom: 28px;
+                    width: 49px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-42 {
+                position: absolute;
+                top: 80px;
+                left: 300px;
+                right: 1120px;
+                bottom: 260px;
+                width: 250px;
+                height: 80px;
+                .group-43 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-52 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-10 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-11 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-34 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-199 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-200 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-53 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-54 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-102-207 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 154px;
+                    bottom: 28px;
+                    width: 72px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-44 {
+                position: absolute;
+                top: 80px;
+                left: 570px;
+                right: 850px;
+                bottom: 260px;
+                width: 250px;
+                height: 80px;
+                .group-45 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-55 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-12 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-13 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-35 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-201 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-202 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-56 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-57 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-29 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 154px;
+                    bottom: 28px;
+                    width: 72px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-46 {
+                position: absolute;
+                top: 180px;
+                left: 30px;
+                right: 1390px;
+                bottom: 160px;
+                width: 250px;
+                height: 80px;
+                .group-47 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-58 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-14 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-15 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-36 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-203 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-204 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-59 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-60 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-201 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-48 {
+                position: absolute;
+                top: 280px;
+                left: 30px;
+                right: 1390px;
+                bottom: 60px;
+                width: 250px;
+                height: 80px;
+                .group-49 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-61 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-16 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-17 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-37 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-205 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-206 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-62 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-63 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-202 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-50 {
+                position: absolute;
+                top: 280px;
+                left: 300px;
+                right: 1120px;
+                bottom: 60px;
+                width: 250px;
+                height: 80px;
+                .group-51 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-64 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-18 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-19 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-38 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-207 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-208 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-65 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-66 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-203 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-52 {
+                position: absolute;
+                top: 180px;
+                left: 1110px;
+                right: 310px;
+                bottom: 160px;
+                width: 250px;
+                height: 80px;
+                .group-53 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-67 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-20 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-21 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-39 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-209 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-210 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-68 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-69 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-204 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-54 {
+                position: absolute;
+                top: 180px;
+                left: 840px;
+                right: 580px;
+                bottom: 160px;
+                width: 250px;
+                height: 80px;
+                .group-55 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-70 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-22 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-23 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-40 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-211 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-212 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-71 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-72 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-205 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-56 {
+                position: absolute;
+                top: 180px;
+                left: 1380px;
+                right: 40px;
+                bottom: 160px;
+                width: 250px;
+                height: 80px;
+                .group-57 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-73 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-24 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-25 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-41 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-213 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-214 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-74 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-75 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-206 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-58 {
+                position: absolute;
+                top: 180px;
+                left: 300px;
+                right: 1120px;
+                bottom: 160px;
+                width: 250px;
+                height: 80px;
+                .group-59 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-76 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: 0px 10px 20px 0px rgba(190, 198, 223, 0.5);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #1947FF;
+                    }
+                    .ellipse-26 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-27 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-42 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-215 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-216 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-77 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-78 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-207 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 157px;
+                    bottom: 28px;
+                    width: 69px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-60 {
+                position: absolute;
+                top: 180px;
+                left: 570px;
+                right: 850px;
+                bottom: 160px;
+                width: 250px;
+                height: 80px;
+                .group-61 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-79 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-28 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-29 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-43 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-217 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-218 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-80 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-81 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-101-301 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 160px;
+                    bottom: 28px;
+                    width: 66px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-62 {
+                position: absolute;
+                top: 80px;
+                left: 840px;
+                right: 580px;
+                bottom: 260px;
+                width: 250px;
+                height: 80px;
+                .group-63 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-82 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-30 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-31 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-44 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-219 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-220 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-83 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-84 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-30 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 136px;
+                    bottom: 28px;
+                    width: 90px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-64 {
+                position: absolute;
+                top: 80px;
+                left: 1110px;
+                right: 310px;
+                bottom: 260px;
+                width: 250px;
+                height: 80px;
+                .group-65 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-85 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-32 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-33 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-45 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-221 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-222 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-86 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-87 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-103-306 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 153px;
+                    bottom: 28px;
+                    width: 73px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .group-66 {
+                position: absolute;
+                top: 80px;
+                left: 1380px;
+                right: 40px;
+                bottom: 260px;
+                width: 250px;
+                height: 80px;
+                .group-67 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: 80px;
+                    .rectangle-88 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 250px;
+                        height: 80px;
+                        box-shadow: inset 0px 1px 10px 0px rgba(15, 101, 231, 0.12), 0px 10px 20px 0px rgba(190, 198, 223, 0.2);
+                        border-radius: 12px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                    }
+                    .ellipse-34 {
+                        position: absolute;
+                        top: -222px;
+                        left: -218px;
+                        right: -2px;
+                        bottom: -168px;
+                        width: 134px;
+                        height: 134px;
+                    }
+                    .ellipse-35 {
+                        position: absolute;
+                        top: -169px;
+                        left: -43px;
+                        right: -204px;
+                        bottom: -248px;
+                        width: 215px;
+                        height: 215px;
+                    }
+                    .frame-46 {
+                        position: absolute;
+                        top: 8px;
+                        left: 159px;
+                        right: 8px;
+                        bottom: -3px;
+                        width: 83px;
+                        height: 75px;
+                        opacity: 0.6000000238418579;
+                        overflow: hidden;
+                        .pen-223 {
+                            position: absolute;
+                            top: 15px;
+                            left: 34px;
+                            right: 6px;
+                            bottom: 0px;
+                            width: 42.74px;
+                            height: 59.56px;
+                        }
+                        .pen-224 {
+                            position: absolute;
+                            top: -2px;
+                            left: 0px;
+                            right: -4px;
+                            bottom: -1px;
+                            width: 83px;
+                            height: 75px;
+                        }
+                        .rectangle-89 {
+                            position: absolute;
+                            top: 24.82px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 43.01px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                        .rectangle-90 {
+                            position: absolute;
+                            top: 45.77px;
+                            left: 19.3px;
+                            right: 38.6px;
+                            bottom: 22.06px;
+                            width: 25.1px;
+                            height: 7.17px;
+                            box-shadow: 1px 0px 1px 0px rgba(108, 155, 255, 0.38);
+                            border-radius: 4.41px;
+                            background: linear-gradient(112deg, rgba(212, 236, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                            border: 0.55px solid #FFFFFF;
+                        }
+                    }
+                }
+                .text-31 {
+                    position: absolute;
+                    top: 28px;
+                    left: 24px;
+                    right: 136px;
+                    bottom: 28px;
+                    width: 90px;
+                    height: 24px;
+                    white-space: nowrap;
+                    color: #191C1E;
+                    font-family: "PingFang SC";
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .text-32 {
+            position: absolute;
+            top: 24px;
+            left: 30px;
+            right: 1544px;
+            bottom: 364px;
+            width: 96px;
+            height: 32px;
+            white-space: nowrap;
+            color: #191C1E;
+            font-family: "PingFang SC";
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+        .group-68 {
+            position: absolute;
+            top: 225px;
+            left: 440px;
+            right: 1214px;
+            bottom: 175px;
+            width: 8px;
+            height: 12px;
+        }
+    }
+    .group-69 {
+        position: absolute;
+        top: 516px;
+        left: 1530px;
+        width: 370px;
+        height: 216px;
+        .rectangle-91 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 370px;
+            height: 216px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .text-33 {
+            position: absolute;
+            top: 24px;
+            left: 30px;
+            right: 244px;
+            bottom: 160px;
+            width: 96px;
+            height: 32px;
+            white-space: nowrap;
+            color: #191C1E;
+            font-family: "PingFang SC";
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+        }
+        .group-70 {
+            position: absolute;
+            top: 138px;
+            left: 30px;
+            width: 310px;
+            height: 56px;
+            .frame-47 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 310px;
+                height: 56px;
+                overflow: hidden;
+                .rectangle-92 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 310px;
+                    height: 56px;
+                    border-radius: 12px;
+                    background: #FFFFFF;
+                }
+                .rectangle-93 {
+                    position: absolute;
+                    top: 69px;
+                    left: -17px;
+                    right: -31px;
+                    bottom: -124px;
+                    width: 358px;
+                    height: 111px;
+                    transform-origin: 0 0;
+                    transform: scaleY(-1);
+                }
+            }
+            .text-34 {
+                position: absolute;
+                top: 17px;
+                left: 66px;
+                right: 164px;
+                bottom: 17px;
+                width: 80px;
+                height: 22px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+                text-align: center;
+            }
+            .group-71 {
+                position: absolute;
+                top: 20px;
+                left: 290px;
+                right: 4px;
+                bottom: 20px;
+                width: 16px;
+                height: 16px;
+                transform-origin: 0 0;
+                transform: rotate(180deg) scaleY(-1);
+                .frame-48 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 16px;
+                    height: 16px;
+                    overflow: hidden;
+                    .rectangle-94 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .group-72 {
+                        position: absolute;
+                        top: 3px;
+                        left: 11px;
+                        right: -2px;
+                        bottom: 3px;
+                        width: 4px;
+                        height: 8px;
+                        transform-origin: 0 0;
+                        transform: rotate(180deg) scaleY(-1);
+                    }
+                }
+            }
+            .group-74 {
+                position: absolute;
+                top: 8px;
+                left: 20px;
+                right: 250px;
+                bottom: 8px;
+                width: 40px;
+                height: 40px;
+                .rectangle-95 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5.33px;
+                }
+                .rectangle-96 {
+                    position: absolute;
+                    top: 6.61px;
+                    left: 25.47px;
+                    right: 12.53px;
+                    bottom: 22.39px;
+                    width: 2px;
+                    height: 11px;
+                    transform-origin: 0 0;
+                    transform: rotate(45deg);
+                    box-shadow: inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 5.33px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                }
+                .rectangle-97 {
+                    position: absolute;
+                    top: 9.18px;
+                    left: 9.61px;
+                    right: 1.39px;
+                    bottom: 9.82px;
+                    width: 29px;
+                    height: 21px;
+                    transform-origin: 0 0;
+                    transform: rotate(15deg);
+                    backdrop-filter: blur(6.67px);
+                    border-radius: 3px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%), linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%);
+                    border: 0.5px solid rgba(255, 255, 255, 0.7);
+                }
+                .rectangle-98 {
+                    position: absolute;
+                    top: 8.03px;
+                    left: 13.11px;
+                    right: 24.89px;
+                    bottom: 20.97px;
+                    width: 2px;
+                    height: 11px;
+                    transform-origin: 0 0;
+                    transform: rotate(-45deg);
+                    box-shadow: inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 5.33px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                }
+                .rectangle-99 {
+                    position: absolute;
+                    top: 12px;
+                    left: 6px;
+                    right: 6px;
+                    bottom: 7px;
+                    width: 28px;
+                    height: 21px;
+                    backdrop-filter: blur(6.67px);
+                    border-radius: 3px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%), linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%);
+                    border: 0.5px solid rgba(255, 255, 255, 0.7);
+                }
+                .rectangle-100 {
+                    position: absolute;
+                    top: 15px;
+                    left: 9px;
+                    right: 9px;
+                    bottom: 10px;
+                    width: 22px;
+                    height: 15px;
+                    box-shadow: inset -0.5px -0.5px 1px 0px rgba(255, 255, 255, 1), inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 2px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                    border: 0.2px solid #FFFFFF;
+                }
+                .rectangle-101 {
+                    position: absolute;
+                    top: 21px;
+                    left: 14px;
+                    right: 24px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 6px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 5.33px;
+                    background: #FFFFFF;
+                }
+                .rectangle-102 {
+                    position: absolute;
+                    top: 18px;
+                    left: 19px;
+                    right: 19px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 9px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 5.33px;
+                    background: #FFFFFF;
+                }
+                .rectangle-103 {
+                    position: absolute;
+                    top: 23px;
+                    left: 24px;
+                    right: 14px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 4px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 5.33px;
+                    background: #FFFFFF;
+                }
+            }
+        }
+        .group-75 {
+            position: absolute;
+            top: 72px;
+            left: 30px;
+            right: 30px;
+            bottom: 88px;
+            width: 310px;
+            height: 56px;
+            .group-76 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 310px;
+                height: 56px;
+                .rectangle-104 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 310px;
+                    height: 56px;
+                    border-radius: 12px;
+                    background: #FFFFFF;
+                }
+                .rectangle-105 {
+                    position: absolute;
+                    top: 69px;
+                    left: -17px;
+                    right: -31px;
+                    bottom: -124px;
+                    width: 358px;
+                    height: 111px;
+                    transform-origin: 0 0;
+                    transform: scaleY(-1);
+                    opacity: 0.4000000059604645;
+                }
+            }
+            .text-35 {
+                position: absolute;
+                top: 17px;
+                left: 66px;
+                right: 180px;
+                bottom: 17px;
+                width: 64px;
+                height: 22px;
+                white-space: nowrap;
+                color: #000000;
+                font-family: "PingFang SC";
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+                text-align: center;
+            }
+            .group-77 {
+                position: absolute;
+                top: 20px;
+                left: 290px;
+                right: 4px;
+                bottom: 20px;
+                width: 16px;
+                height: 16px;
+                transform-origin: 0 0;
+                transform: rotate(180deg) scaleY(-1);
+                .frame-49 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 16px;
+                    height: 16px;
+                    overflow: hidden;
+                    .rectangle-106 {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    .group-78 {
+                        position: absolute;
+                        top: 3px;
+                        left: 11px;
+                        right: -2px;
+                        bottom: 3px;
+                        width: 4px;
+                        height: 8px;
+                        transform-origin: 0 0;
+                        transform: rotate(180deg) scaleY(-1);
+                    }
+                }
+            }
+            .group-80 {
+                position: absolute;
+                top: 8px;
+                left: 20px;
+                right: 250px;
+                bottom: 8px;
+                width: 40px;
+                height: 40px;
+                .rectangle-107 {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5.33px;
+                }
+                .rectangle-108 {
+                    position: absolute;
+                    top: 7px;
+                    left: 7.5px;
+                    right: 7.5px;
+                    bottom: 5px;
+                    width: 25px;
+                    height: 28px;
+                    backdrop-filter: blur(6.67px);
+                    border-radius: 3px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%), linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%);
+                    border: 0.5px solid rgba(255, 255, 255, 0.7);
+                }
+                .rectangle-109 {
+                    position: absolute;
+                    top: 13px;
+                    left: 10.5px;
+                    right: 10.5px;
+                    bottom: 8px;
+                    width: 19px;
+                    height: 19px;
+                    box-shadow: inset -0.5px -0.5px 1px 0px rgba(255, 255, 255, 1), inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 2px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                    border: 0.2px solid #FFFFFF;
+                }
+                .rectangle-110 {
+                    position: absolute;
+                    top: 8px;
+                    left: 8.5px;
+                    right: 8.5px;
+                    bottom: 25px;
+                    width: 23px;
+                    height: 7px;
+                    backdrop-filter: blur(1.67px);
+                    border-radius: 2.4px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%), linear-gradient(180deg, rgba(67, 179, 255, 0.1) 0%, rgba(25, 71, 255, 0.1) 100%);
+                    border: 0.5px solid rgba(255, 255, 255, 0.7);
+                }
+                .rectangle-111 {
+                    position: absolute;
+                    top: 17px;
+                    left: 18.9px;
+                    right: 19.1px;
+                    bottom: 21px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-112 {
+                    position: absolute;
+                    top: 17px;
+                    left: 22.1px;
+                    right: 15.9px;
+                    bottom: 21px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-113 {
+                    position: absolute;
+                    top: 17px;
+                    left: 25.3px;
+                    right: 12.7px;
+                    bottom: 21px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-114 {
+                    position: absolute;
+                    top: 21px;
+                    left: 18.9px;
+                    right: 19.1px;
+                    bottom: 17px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-115 {
+                    position: absolute;
+                    top: 21px;
+                    left: 22.1px;
+                    right: 15.9px;
+                    bottom: 17px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-116 {
+                    position: absolute;
+                    top: 21px;
+                    left: 25.3px;
+                    right: 12.7px;
+                    bottom: 17px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-117 {
+                    position: absolute;
+                    top: 21px;
+                    left: 12.5px;
+                    right: 25.5px;
+                    bottom: 17px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-118 {
+                    position: absolute;
+                    top: 21px;
+                    left: 15.7px;
+                    right: 22.3px;
+                    bottom: 17px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-119 {
+                    position: absolute;
+                    top: 25px;
+                    left: 18.9px;
+                    right: 19.1px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-120 {
+                    position: absolute;
+                    top: 25px;
+                    left: 22.1px;
+                    right: 15.9px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-121 {
+                    position: absolute;
+                    top: 25px;
+                    left: 12.5px;
+                    right: 25.5px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-122 {
+                    position: absolute;
+                    top: 25px;
+                    left: 15.7px;
+                    right: 22.3px;
+                    bottom: 13px;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 46, 192, 0.79);
+                    border-radius: 0.6px;
+                    background: #FFFFFF;
+                }
+                .rectangle-123 {
+                    position: absolute;
+                    top: 5.5px;
+                    left: 13.5px;
+                    right: 24.5px;
+                    bottom: 29.5px;
+                    width: 2px;
+                    height: 5px;
+                    box-shadow: inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 5.33px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                }
+                .rectangle-124 {
+                    position: absolute;
+                    top: 5.5px;
+                    left: 19px;
+                    right: 19px;
+                    bottom: 29.5px;
+                    width: 2px;
+                    height: 5px;
+                    box-shadow: inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 5.33px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                }
+                .rectangle-125 {
+                    position: absolute;
+                    top: 5.5px;
+                    left: 24.5px;
+                    right: 13.5px;
+                    bottom: 29.5px;
+                    width: 2px;
+                    height: 5px;
+                    box-shadow: inset 1px 1px 1px 0px rgba(33, 77, 231, 0.35);
+                    border-radius: 5.33px;
+                    background: linear-gradient(180deg, rgba(67, 179, 255, 1) 0%, rgba(25, 71, 255, 1) 100%);
+                }
+            }
+        }
+    }
+    .frame-50 {
+        position: absolute;
+        top: 560px;
+        left: 20px;
+        right: 1720px;
+        bottom: 476px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-126 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-127 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-37 {
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            right: 66px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    .frame-51 {
+        position: absolute;
+        top: 510px;
+        left: 20px;
+        right: 1720px;
+        bottom: 526px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-128 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0.04999999701976776;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-129 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-38 {
+            position: absolute;
+            top: 12px;
+            left: 58px;
+            right: 66px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .pen-228 {
+            position: absolute;
+            top: 25px;
+            left: 135px;
+            right: 35px;
+            bottom: 5px;
+            width: 8px;
+            height: 12px;
+        }
+        .hover {
+            position: absolute;
+            top: 3px;
+            left: 144px;
+            right: 5px;
+            bottom: 24px;
+            width: 31px;
+            height: 17px;
+            white-space: nowrap;
+            color: #FF0000;
+            font-family: "PingFang SC";
+            font-size: 12px;
+            line-height: 17px;
+            font-weight: 400;
+        }
+    }
+    .frame-52 {
+        position: absolute;
+        top: 610px;
+        left: 20px;
+        right: 1720px;
+        bottom: 426px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-130 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-131 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-39 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .frame-53 {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            right: 144px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .frame-55 {
+        position: absolute;
+        top: 160px;
+        left: 20px;
+        right: 1720px;
+        bottom: 876px;
+        width: 180px;
+        height: 44px;
+        overflow: hidden;
+        .rectangle-132 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 180px;
+            height: 44px;
+            opacity: 0;
+            border-radius: 8px;
+            background: #0047FF;
+        }
+        .rectangle-133 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            right: 178px;
+            bottom: 10px;
+            width: 2px;
+            height: 24px;
+            opacity: 0;
+            border-radius: 0px 2px 2px 0px;
+            background: #FFFFFF;
+        }
+        .text-40 {
+            position: absolute;
+            top: 12px;
+            left: 48px;
+            right: 76px;
+            bottom: 12px;
+            width: 56px;
+            height: 20px;
+            white-space: nowrap;
+            color: #000000;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+        .clipped {
+            position: absolute;
+            top: 14px;
+            left: 20px;
+            right: 144px;
+            bottom: 14px;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            .rectangle-134 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 16px;
+                height: 16px;
+            }
+            .group-81 {
+                position: absolute;
+                top: 8px;
+                left: -1px;
+                right: 2px;
+                bottom: 0px;
+                width: 14.04px;
+                height: 7.29px;
+            }
+            .ellipse-36 {
+                position: absolute;
+                top: 1px;
+                left: 3px;
+                right: 7px;
+                bottom: 8px;
+                width: 5px;
+                height: 5px;
+            }
+            .ellipse-37 {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                right: 2px;
+                bottom: 6px;
+                width: 3px;
+                height: 3px;
+            }
+            .pen-237 {
+                position: absolute;
+                top: 10px;
+                left: 8px;
+                right: 0px;
+                bottom: 1px;
+                width: 7px;
+                height: 3px;
+            }
+        }
+    }
+    .group-83 {
+        position: absolute;
+        top: 16px;
+        left: 1434px;
+        width: 456px;
+        height: 86px;
+        .ellipse-38 {
+            position: absolute;
+            top: -18px;
+            left: -22px;
+            right: 390px;
+            bottom: 16px;
+            width: 44px;
+            height: 44px;
+        }
+        .group-84 {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 424px;
+            bottom: 54px;
+            width: 20px;
+            height: 20px;
+            .rectangle-135 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 20px;
+                height: 20px;
+            }
+            .rectangle-136 {
+                position: absolute;
+                top: 3px;
+                left: 1.5px;
+                right: 1.5px;
+                bottom: 3px;
+                width: 17px;
+                height: 14px;
+                border-radius: 2px;
+                border: 1.8px solid #191C1E;
+            }
+            .pen-238 {
+                position: absolute;
+                top: 5px;
+                left: 0px;
+                right: 0px;
+                bottom: 7px;
+                width: 17px;
+                height: 6px;
+            }
+        }
+        .ellipse-39 {
+            position: absolute;
+            top: -18px;
+            left: 52px;
+            right: 316px;
+            bottom: 16px;
+            width: 44px;
+            height: 44px;
+        }
+        .xiaoxi {
+            position: absolute;
+            top: 12px;
+            left: 86px;
+            right: 350px;
+            bottom: 54px;
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+            .rectangle-137 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 20px;
+                height: 20px;
+            }
+            .pen-239 {
+                position: absolute;
+                top: 0px;
+                left: 1px;
+                right: 1px;
+                bottom: 4px;
+                width: 18px;
+                height: 14px;
+            }
+            .pen-240 {
+                position: absolute;
+                top: 16px;
+                left: 6px;
+                right: 6px;
+                bottom: 0px;
+                width: 5px;
+                height: 1.18px;
+            }
+        }
+        .ellipse-40 {
+            position: absolute;
+            top: 10px;
+            left: 96px;
+            right: 350px;
+            bottom: 66px;
+            width: 6px;
+            height: 6px;
+        }
+        .group-85 {
+            position: absolute;
+            top: 12px;
+            left: 436px;
+            right: 0px;
+            bottom: 54px;
+            width: 20px;
+            height: 20px;
+            .rectangle-138 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 20px;
+                height: 20px;
+            }
+            .pen-241 {
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                right: 10px;
+                bottom: 1px;
+                width: 7px;
+                height: 16px;
+            }
+            .pen-242 {
+                position: absolute;
+                top: 9px;
+                left: 6px;
+                right: 1px;
+                bottom: 9px;
+                width: 10px;
+                height: 1px;
+            }
+            .pen-243 {
+                position: absolute;
+                top: 5px;
+                left: 12px;
+                right: 1px;
+                bottom: 9px;
+                width: 4px;
+                height: 4px;
+            }
+            .pen-244 {
+                position: absolute;
+                top: 9px;
+                left: 12px;
+                right: 1px;
+                bottom: 5px;
+                width: 4px;
+                height: 4px;
+            }
+        }
+        .admin {
+            position: absolute;
+            top: 12px;
+            left: 235px;
+            right: 180px;
+            bottom: 54px;
+            width: 41px;
+            height: 20px;
+            white-space: nowrap;
+            color: #191C1E;
+            font-family: "PingFang SC";
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+        .group-86 {
+            position: absolute;
+            top: 0px;
+            left: 179px;
+            width: 44px;
+            height: 44px;
+            .ellipse-41 {
+                position: absolute;
+                top: -18px;
+                left: -22px;
+                width: 44px;
+                height: 44px;
+            }
+            .image {
+                position: absolute;
+                top: -7px;
+                left: -11px;
+                width: 66px;
+                height: 66px;
+                object-fit: cover;
+            }
+        }
+        .rectangle-139 {
+            position: absolute;
+            top: 7px;
+            left: 148px;
+            right: 307px;
+            bottom: 49px;
+            width: 1px;
+            height: 30px;
+            opacity: 0.5;
+            background: rgba(105, 123, 169, 0.4);
+            box-sizing: content-box;
+        }
+        .group-87 {
+            position: absolute;
+            top: 0px;
+            left: 296px;
+            right: 50px;
+            bottom: 42px;
+            width: 110px;
+            height: 44px;
+            .rectangle-140 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 110px;
+                height: 44px;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.7);
+                box-sizing: content-box;
+                border: 1px solid rgba(105, 123, 169, 0.1);
+            }
+            .text-41 {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                right: 56px;
+                bottom: 12px;
+                width: 42px;
+                height: 20px;
+                white-space: nowrap;
+                color: #191C1E;
+                font-family: "PingFang SC";
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+            }
+            .frame-56 {
+                position: absolute;
+                top: 12px;
+                left: 78px;
+                right: 12px;
+                bottom: 12px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .pen-248 {
+            position: absolute;
+            top: 25px;
+            left: 110px;
+            right: 336px;
+            bottom: 47px;
+            width: 8px;
+            height: 12px;
+        }
+        .group-88 {
+            position: absolute;
+            top: 50px;
+            left: 74px;
+            width: 44px;
+            height: 36px;
+            .bg {
+                position: absolute;
+                top: -10px;
+                left: -12px;
+                width: 44px;
+                height: 36px;
+            }
+            .text-42 {
+                position: absolute;
+                top: 9px;
+                left: 8px;
+                right: 8px;
+                width: 28px;
+                height: 22px;
+                color: #FFFFFF;
+                font-family: "PingFang SC";
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSS + Claude Code</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css" id="highlight-theme" />
+
+<style>
+  :root {
+    --brand-1: #a855f7;
+    --brand-2: #ec4899;
+    --brand-3: #38bdf8;
+    --ink-soft: #cbd5e1;
+    --ink-mute: #94a3b8;
+    --bg-card: rgba(148, 163, 184, 0.08);
+    --bg-card-strong: rgba(148, 163, 184, 0.14);
+    --line: rgba(148, 163, 184, 0.22);
+    --good: #34d399;
+    --bad: #f87171;
+    --warn: #fbbf24;
+  }
+
+  .reveal {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+      "Microsoft YaHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #e2e8f0;
+    font-size: 32px;
+  }
+  .reveal .slides { text-align: left; }
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #f8fafc;
+  }
+  .reveal h1 {
+    font-size: 2.4em;
+    background: linear-gradient(120deg, var(--brand-1), var(--brand-2) 60%, var(--brand-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .reveal h2 { font-size: 1.5em; margin-bottom: 0.3em; }
+  .reveal h3 { font-size: 1.05em; color: var(--brand-1); margin-top: 0.5em; }
+  .reveal p, .reveal li { color: var(--ink-soft); line-height: 1.5; }
+  .reveal a { color: var(--brand-3); }
+  .reveal strong { color: #fde68a; }
+
+  .reveal pre {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    width: 100%;
+    margin: 0.4em 0;
+  }
+  .reveal pre code {
+    padding: 14px 18px;
+    font-family: "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 0.5em;
+    line-height: 1.5;
+    border-radius: 10px;
+    max-height: 480px;
+  }
+  .reveal code { font-family: "JetBrains Mono", Menlo, Consolas, monospace; }
+  .reveal :not(pre) > code {
+    background: rgba(168, 85, 247, 0.18);
+    color: #f0abfc;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+
+  /* 通用版面工具类 */
+  .lead { font-size: 1.1em; color: #f8fafc; margin: 0 0 0.6em 0; }
+  .muted { color: var(--ink-mute); font-size: 0.85em; }
+  .pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.7em;
+    background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+    color: white;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .pill.ghost {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .card h3 { margin-top: 0; }
+  .card.good { border-color: rgba(52, 211, 153, 0.4); }
+  .card.bad  { border-color: rgba(248, 113, 113, 0.4); }
+  .card.good h3 { color: var(--good); }
+  .card.bad  h3 { color: var(--bad); }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .tag {
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.7em;
+    color: var(--ink-soft);
+  }
+
+  .footer-tip {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--line);
+    text-align: center;
+    color: var(--warn);
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+  }
+  .footer-tip::before { content: "💡 "; }
+
+  /* 封面 */
+  .cover {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .cover .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    color: var(--ink-mute);
+    font-size: 0.8em;
+  }
+  .cover .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  }
+  .cover h1 { font-size: 3.4em; margin-bottom: 0.1em; }
+  .cover .subtitle { color: var(--ink-soft); font-size: 1.1em; margin-bottom: 1.5em; }
+  .cover .meta {
+    display: inline-flex;
+    gap: 22px;
+    padding: 10px 22px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg-card);
+    color: var(--ink-mute);
+    font-size: 0.78em;
+  }
+
+  /* 议程 */
+  .agenda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .agenda .col {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+  }
+  .agenda h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    color: #f8fafc;
+  }
+  .agenda h3 .num {
+    width: 32px; height: 32px;
+    display: inline-grid; place-items: center;
+    border-radius: 8px;
+    background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+    color: white; font-size: 0.7em; font-weight: 700;
+  }
+  .agenda ul { list-style: none; padding: 0; margin: 8px 0 0 0; }
+  .agenda li {
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--line);
+    font-size: 0.78em;
+  }
+  .agenda li:last-child { border-bottom: none; }
+  .agenda li::before { content: "▸ "; color: var(--brand-1); }
+
+  /* slide 编号小标 */
+  .reveal section .corner {
+    position: absolute;
+    top: -30px; right: 0;
+    color: var(--ink-mute);
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ========== 1. 封面 ========== -->
+<section class="cover">
+  <div class="logo-row">
+    <span class="dot"></span>
+    <span>iFLYTEK · 前端组内培训</span>
+    <span class="dot"></span>
+  </div>
+  <h1>CSS &amp; Claude Code</h1>
+  <div class=「subtitle」>写得快一点，坑少一点 — 上手指南</div>
+  <div class="meta">
+    <span>分享人 · 杨爽</span>
+    <span>·</span>
+    <span>2026 / 06</span>
+  </div>
+  <aside class="notes">
+    开场：不是教科书，是踩坑笔记。听完今天的内容你不会变成 CSS 专家，但日常 90% 的样式问题、跟 Claude Code 协作的姿势，应该都能心里有数。
+  </aside>
+</section>
+
+<!-- ========== 2. 今天聊什么 ========== -->
+<section>
+  <span class="corner">02 / 23</span>
+  <h2>今天聊什么</h2>
+  <p class=「lead muted」>两个主题，一个目标：让你下班早点走。</p>
+  <div class="agenda">
+    <div class="col">
+      <h3><span class=「num」>01</span> CSS 实战</h3>
+      <ul>
+        <li>布局：Flex / Grid 怎么选</li>
+        <li>居中、层叠、优先级、单位</li>
+        <li>变量、容器查询、:has()</li>
+        <li>DevTools 调试技巧</li>
+        <li>性能与工程化路线</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3><span class=「num」>02</span> Claude Code 工作流</h3>
+      <ul>
+        <li>心智模型：它不是补全</li>
+        <li>提示词 & CLAUDE.md</li>
+        <li>Plan 模式 + 子 agent</li>
+        <li>MCP 工具 & 效率提升</li>
+        <li>避坑清单</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-tip">
+    这不是教科书，是踩坑笔记。每页右下角都有一条「提示」，讲师视图(按 S)有更多备注。
+  </div>
+  <aside class="notes">
+    强调：CSS 部分假设大家知道选择器、盒模型、display 是啥。
+    Claude Code 部分假设大家会装会用，但用得不一定地道。
+  </aside>
+</section>
+
+<!-- ========== Part 1 分隔页 ========== -->
+<section data-background-gradient="linear-gradient(135deg, #1e1b4b 0%, #831843 100%)">
+  <div style="text-align:center; padding-top: 80px;">
+    <span class="pill">PART 1</span>
+    <h1 style=「margin-top: 0.4em; font-size: 3em;」>CSS 实战</h1>
+    <p class=「lead muted」>现代浏览器把 CSS 简化了不少，但坑也换了形状。</p>
+  </div>
+</section>
+
+<!-- ========== 03. 布局只剩两个 ========== -->
+<section>
+  <span class="corner">03 / 23</span>
+  <h2>现代布局只剩两个：Flex 还是 Grid</h2>
+  <p class=「lead」>别再用 <code>float</code>、<code>inline-block</code>、<code>table</code> 凑布局了。</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3><a href="https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank">Flex — 一维</a></h3>
+      <p>排成一行 / 一列。元素的<strong>大小由内容</strong>决定，只关心怎么沿主轴排开。</p>
+      <ul>
+        <li>导航栏、按钮组、表单一行</li>
+        <li>左侧固定宽 + 右侧自适应</li>
+        <li>底部 sticky footer</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><a href="https://ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html" target="_blank">Grid — 二维</a></h3>
+      <p>同时管行和列，<strong>容器决定网格</strong>，孩子放进去就好。</p>
+      <ul>
+        <li>页面整体框架(header / aside / main)</li>
+        <li>卡片墙、商品列表</li>
+        <li>表格式表单(label 对齐)</li>
+      </ul>
+    </div>
+  </div>
+
+  <pre><code class="language-css" data-trim data-noescape>
+/* 一句话决策 */
+.row   { display: flex;        gap: 12px; }              /* 一行排开 */
+.cards { display: grid;
+         grid-template-columns: repeat(auto-fill,
+                                       minmax(240px, 1fr));
+         gap: 16px; }                                    /* 卡片墙 */
+  </code></pre>
+
+  <div class="footer-tip">
+    判断标准很简单：只关心「沿一个方向排」用 Flex,需要「行列同时对齐」用 Grid。
+  </div>
+  <aside class="notes">
+    auto-fill + minmax 是卡片墙的标准范式，不需要写 media query 就能自动换行。
+  </aside>
+</section>
+
+<!-- ========== 04. Flex 实战:复杂排行榜 ========== -->
+<section>
+  <span class="corner">04 / 23</span>
+  <h2>实战：这种排行榜怎么拆</h2>
+  <p class="lead">第一眼觉得复杂，拆开看就是<strong>Flex 套 Flex</strong>。</p>
+
+  <div class="grid-2" style="gap: 16px;">
+    <div>
+      <img src="ui01.png" alt="评价报表 UI" style="width: 100%; border-radius: 8px; border: 1px solid var(--line);" />
+      <p class="muted" style="font-size: 0.7em; margin-top: 6px;">教师 / 课程双榜，前三领奖台 + 后续列表</p>
+    </div>
+
+    <div>
+      <h3 style="margin-top: 0;">拆解思路</h3>
+      <ul style="font-size: 0.78em;">
+        <li>外层<strong>横向 Flex</strong>：左右两块榜单 <code>flex: 1</code> 等分</li>
+        <li>每块内部<strong>纵向 Flex</strong>：标题 + 领奖台 + 列表</li>
+        <li>领奖台用<strong>横向 Flex + align-items: flex-end</strong>：第二第三矮、第一高，底部对齐</li>
+        <li>下方排名用<strong>纵向 Flex + justify-content: space-between</strong>：左侧名字、右侧分数贴边</li>
+      </ul>
+
+<pre><code class="language-css" data-trim>
+/* 外层 */
+.report { display: flex; gap: 16px; }
+.panel  { flex: 1; display: flex; flex-direction: column; }
+
+/* 领奖台:三个块底部对齐,第一名居中拔高 */
+.podium { display: flex; align-items: flex-end;
+          justify-content: center; gap: 12px; }
+.rank-1 { height: 180px; }   /* 高 */
+.rank-2, .rank-3 { height: 140px; }
+
+/* 排名行:名字左、分数右 */
+.row { display: flex; justify-content: space-between;
+       align-items: center; padding: 12px 0; }
+</code></pre>
+    </div>
+  </div>
+
+  <div class="footer-tip">
+    复杂 UI 拿到手别慌，先画"嵌套盒子图"，每层只问一个问题:横排还是竖排。
+  </div>
+  <aside class="notes">
+    现场可以问大家:这个 UI 的"领奖台"为什么三块底部对齐?
+    答案:align-items: flex-end。第一名 height 高,自然就拔起来了。
+    初学者最容易卡在"中间高两边矮"这种异形布局,其实就是 align-items 的事。
+  </aside>
+</section>
+
+<!-- ========== 05. 居中这件小事 ========== -->
+<section>
+  <span class="corner">05 / 23</span>
+  <h2>居中这件小事</h2>
+  <p class=「lead」>2026 年了，居中应该是一行的事。</p>
+
+  <div class="grid-2">
+    <div class="card good">
+      <h3>✓ Grid 一行流</h3>
+<pre><code class="language-css" data-trim>
+.box {
+  display: grid;
+  place-items: center;
+}
+</code></pre>
+    </div>
+    <div class="card good">
+      <h3>✓ Flex 经典</h3>
+<pre><code class="language-css" data-trim>
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</code></pre>
+    </div>
+    <div class="card good">
+      <h3>✓ margin auto(已知宽高)</h3>
+<pre><code class="language-css" data-trim>
+.child {
+  margin-inline: auto;  /* 水平 */
+  /* 垂直需要父级是 flex/grid */
+}
+</code></pre>
+    </div>
+    <div class="card bad">
+      <h3>✗ 别再写</h3>
+<pre><code class="language-css" data-trim>
+.child {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+</code></pre>
+      <p class=「muted」 style=「font-size:0.75em」>能用，但脱离文档流，容易把后面的事搞复杂。</p>
+    </div>
+  </div>
+
+  <div class="footer-tip">
+    place-items 同时管 align 和 justify,记一个顶两个。
+  </div>
+</section>
+
+<!-- ========== 05. 优先级 ========== -->
+<section>
+  <span class="corner">06 / 23</span>
+  <h2>选择器优先级：别再 !important</h2>
+  <p class=「lead」>优先级是 <code>(行内，ID, 类/属性/伪类，元素/伪元素)</code> 四元组，逐位比较。</p>
+
+  <div class="grid-2">
+    <div>
+      <pre><code class="language-css" data-trim>
+/* (0,0,1,0) — 一个类 */
+.btn { color: red; }
+
+/* (0,0,2,0) — 两个类 */
+.card .btn { color: blue; }
+
+/* (0,1,0,0) — 一个 ID,赢上面所有 */
+#submit { color: green; }
+
+/* 行内样式 = (1,0,0,0),还能更高 */
+&lt;a style="color: pink"&gt;&lt;/a&gt;
+
+/* !important 是核武，会让别人也只能 !important */
+      </code></pre>
+    </div>
+    <div>
+      <h3>降权:<code>:where()</code></h3>
+<pre><code class="language-css" data-trim>
+/* :where() 让选择器优先级永远是 0 */
+:where(.reset) ul { list-style: none; }
+
+/* 用户随便用一个类就能覆盖 */
+.my-list { list-style: disc; }   /* 赢 */
+</code></pre>
+      <p class=「muted」 style=「font-size:0.78em」>写组件库或全局 reset 时，用 <code>:where</code> 把基础样式优先级压到 0,业务覆盖永不打架。</p>
+    </div>
+  </div>
+
+  <div class="card bad" style="margin-top: 14px;">
+    <h3>!important 是技术债</h3>
+    <p style="font-size: 0.85em; margin: 0;">
+      它能赢，但会让<strong>下一个改样式的人</strong>必须也写 <code>!important</code>,然后又一个，最后整个文件都是惊叹号。<br>
+      正确做法：找到为啥不生效(99% 是优先级或层叠上下文),从根上改。
+    </p>
+  </div>
+
+  <div class="footer-tip">
+    Chrome DevTools 的 Computed 面板能直接告诉你「被谁覆盖了」，别靠猜。
+  </div>
+</section>
+
+<!-- ========== 07. 单位选哪个 ========== -->
+<section>
+  <span class="corner">07 / 23</span>
+  <h2>单位选哪个，clamp 真香</h2>
+  <p class=「lead」>不同单位代表不同的「参照物」，别凭手感写。</p>
+
+  <table style="width:100%; font-size: 0.7em; border-collapse: collapse;">
+    <thead>
+      <tr style="border-bottom: 1px solid var(--line); color: #f8fafc;">
+        <th style=「text-align:left; padding: 8px;」>单位</th>
+        <th style=「text-align:left; padding: 8px;」>参照</th>
+        <th style=「text-align:left; padding: 8px;」>什么时候用</th>
+      </tr>
+    </thead>
+    <tbody style="color: var(--ink-soft);">
+      <tr style=「border-bottom: 1px dashed var(--line);」><td style=「padding:7px;」><code>px</code></td><td style=「padding:7px;」>物理像素</td><td style=「padding:7px;」>边框、阴影、1-2px 的细节</td></tr>
+      <tr style=「border-bottom: 1px dashed var(--line);」><td style=「padding:7px;」><code>rem</code></td><td style=「padding:7px;」>根元素 font-size</td><td style=「padding:7px;」>字号、间距 — 全局可缩放</td></tr>
+      <tr style=「border-bottom: 1px dashed var(--line);」><td style=「padding:7px;」><code>em</code></td><td style=「padding:7px;」>当前元素 font-size</td><td style=「padding:7px;」>按钮 padding 跟字号联动</td></tr>
+      <tr style=「border-bottom: 1px dashed var(--line);」><td style=「padding:7px;」><code>%</code></td><td style=「padding:7px;」>父元素对应方向</td><td style=「padding:7px;」>弹性宽度、modal 蒙层</td></tr>
+      <tr style=「border-bottom: 1px dashed var(--line);」><td style=「padding:7px;」><code>vw / vh</code></td><td style=「padding:7px;」>视口大小</td><td style=「padding:7px;」>全屏 hero、banner</td></tr>
+      <tr><td style=「padding:7px;」><code>dvh / svh / lvh</code></td><td style=「padding:7px;」>动态/小/大视口</td><td style=「padding:7px;」>移动端浏览器地址栏伸缩 — 用 <code>dvh</code></td></tr>
+    </tbody>
+  </table>
+
+  <pre style="margin-top: 12px;"><code class="language-css" data-trim>
+/* 流体排版：小屏 16px,大屏 22px,中间线性插值 */
+h1 { font-size: clamp(1.4rem, 1rem + 1.5vw, 2.2rem); }
+
+/* 内边距也能 clamp */
+.section { padding: clamp(16px, 4vw, 64px); }
+
+/* 移动端高度别再用 100vh,会被地址栏挡 */
+.hero { min-height: 100dvh; }
+  </code></pre>
+
+  <div class="footer-tip">
+    clamp(min, prefer, max) 几乎可以代替 80% 的 media query。
+  </div>
+</section>
+
+<!-- ========== 08. CSS 变量 + 主题切换(交互 demo) ========== -->
+<section>
+  <span class="corner">08 / 23</span>
+  <h2>CSS 变量：主题切换的标准答案</h2>
+  <p class=「lead」>变量 + <code>data-*</code> 属性，十几行实现暗色模式。</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>实时演示</h3>
+      <div id="theme-demo" data-theme="dark" style="
+            --bg: #0f172a; --fg: #e2e8f0; --primary: #a855f7; --card: #1e293b;
+            background: var(--bg); color: var(--fg);
+            padding: 20px; border-radius: 12px; transition: all .25s ease;">
+        <div style="font-size: 13px; opacity: 0.7;">card preview</div>
+        <div style="font-size: 22px; font-weight: 700; margin: 6px 0 12px 0;">Hello, theme.</div>
+        <div style="background: var(--card); padding: 14px; border-radius: 8px; font-size: 13px;">
+          一段示例文字，跟随主题切换颜色。
+          <button style="margin-left: 8px; background: var(--primary); border: none; color: white; padding: 4px 12px; border-radius: 6px; font-size: 12px;">action</button>
+        </div>
+      </div>
+      <div style="margin-top: 12px; display: flex; gap: 8px;">
+        <button onclick="setTheme('light')" style="flex:1; padding: 8px; background: #f1f5f9; color: #0f172a; border: none; border-radius: 6px; cursor: pointer; font-size: 13px;">☀️ Light</button>
+        <button onclick="setTheme('dark')" style="flex:1; padding: 8px; background: #1e293b; color: #e2e8f0; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; font-size: 13px;">🌙 Dark</button>
+        <button onclick="setTheme('candy')" style="flex:1; padding: 8px; background: linear-gradient(120deg,#ec4899,#f472b6); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 13px;">🍬 Candy</button>
+      </div>
+    </div>
+
+    <div>
+<pre><code class="language-css" data-trim>
+:root {
+  --bg: #fff;
+  --fg: #0f172a;
+  --primary: #6366f1;
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --fg: #e2e8f0;
+  --primary: #a855f7;
+}
+[data-theme="candy"] {
+  --bg: #fff7fb;
+  --fg: #831843;
+  --primary: #ec4899;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  transition: background .2s, color .2s;
+}
+</code></pre>
+<pre><code class="language-js" data-trim>
+// 切主题就一行
+document.documentElement
+        .dataset.theme = 'dark';
+</code></pre>
+    </div>
+  </div>
+
+  <div class="footer-tip">
+    变量也支持作用域：在某个组件内重新定义 --primary,只影响子树。
+  </div>
+  <aside class="notes">
+    实操要点：把所有可主题化的颜色都收拢到一组语义化变量(--bg / --fg / --primary),
+    业务代码只引用变量。换主题 = 改一组变量 = 全站生效。
+  </aside>
+</section>
+
+<!-- ========== 09. 容器查询 ========== -->
+<section>
+  <span class="corner">09 / 23</span>
+  <h2>响应式新姿势：容器查询</h2>
+  <p class=「lead」><code>@media</code> 看的是<strong>视口</strong>,<code>@container</code> 看的是<strong>组件自己</strong>。</p>
+
+  <div class="grid-2">
+    <div class="card bad">
+      <h3>老办法 @media 的痛</h3>
+      <p style="font-size: 0.85em;">
+        同一个卡片组件，放在 sidebar(窄)和 main(宽)里，需要的样式不同。<br>
+        但 <code>@media</code> 只看视口宽度，没法知道「我现在被放在哪」。
+      </p>
+    </div>
+    <div class="card good">
+      <h3>新办法 @container</h3>
+      <p style="font-size: 0.85em;">
+        组件自己决定自己：容器宽过多少就横排，窄了就竖排。<br>
+        组件可以被任意嵌套，行为永远正确。
+      </p>
+    </div>
+  </div>
+
+<pre><code class="language-css" data-trim>
+/* 1. 父级声明这是个查询容器 */
+.card-wrap {
+  container-type: inline-size;
+  container-name: card;
+}
+
+/* 2. 卡片根据自己所在容器的宽度决定布局 */
+.card { display: grid; gap: 12px; }
+
+@container card (min-width: 480px) {
+  .card { grid-template-columns: 160px 1fr; }   /* 宽 → 横排 */
+}
+</code></pre>
+
+  <div class="footer-tip">
+    现代浏览器全支持(2023+)。组件库里早该用了。
+  </div>
+</section>
+
+<!-- ========== 10. 现代选择器 :has() ========== -->
+<section>
+  <span class="corner">10 / 23</span>
+  <h2>现代选择器：<code>:has()</code> 让父级跟着孩子变</h2>
+  <p class=「lead」>CSS 终于有「父选择器」了。配合 <code>:is()</code> / <code>:where()</code>,选择器表达力上一个台阶。</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>试一下</h3>
+      <p class=「muted」 style=「font-size:0.78em」>勾选 → 整个 card 变样。<strong>没用一行 JS</strong>。</p>
+      <div style="display: grid; gap: 10px;" id="has-demo">
+        <label class="has-card" style="display:flex; align-items:center; gap:10px; padding: 14px; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; transition: all .2s;">
+          <input type="checkbox" style="width: 18px; height: 18px;" />
+          <span>选项 A — 试着勾上</span>
+        </label>
+        <label class="has-card" style="display:flex; align-items:center; gap:10px; padding: 14px; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; transition: all .2s;">
+          <input type="checkbox" style="width: 18px; height: 18px;" />
+          <span>选项 B</span>
+        </label>
+      </div>
+      <style>
+        #has-demo .has-card:has(input:checked) {
+          background: linear-gradient(120deg, rgba(168,85,247,0.2), rgba(236,72,153,0.2));
+          border-color: var(--brand-1);
+          color: white;
+        }
+      </style>
+    </div>
+
+    <div>
+<pre><code class="language-css" data-trim>
+/* :has() — 父级根据子级状态变样 */
+.card:has(input:checked) {
+  background: linear-gradient(...);
+  border-color: var(--brand-1);
+}
+
+/* :is() — 选择器分组，优先级 = 组里最高的 */
+:is(h1, h2, h3) + p { margin-top: 0; }
+
+/* :where() — 同 :is(),但优先级永远 0 */
+:where(.reset *) { all: unset; }
+
+/* 表单有错误就给整个表单提示 */
+form:has(:invalid) .submit { opacity: 0.5; }
+</code></pre>
+    </div>
+  </div>
+
+  <div class="footer-tip">
+    :has() 之前要靠 JS 给父级加 class,现在交给 CSS 就行，SSR 也友好。
+  </div>
+</section>
+
+<!-- ========== 10. 组件化三准则 ========== -->
+<section>
+  <span class="corner">11 / 23</span>
+  <h2>前端三准则：组件化优先</h2>
+  <p class="lead">写代码之前先问自己三件事，能省一半返工。</p>
+
+  <div class="grid-3" style="gap: 14px;">
+    <div class="card good">
+      <h3>① 能用组件就用组件</h3>
+      <p style="font-size: 0.82em;">业务里每一块"长得像"的 UI，都是组件的雏形。</p>
+      <ul style="font-size: 0.78em;">
+        <li>表单项、卡片、弹窗、空状态</li>
+        <li>优先用 <a href="https://element-plus.org/zh-CN/" target="_blank">Element Plus</a> 现成的</li>
+        <li>抽不出来就别硬抽，三处重复才考虑</li>
+      </ul>
+    </div>
+    <div class="card good">
+      <h3>② 能复用就复用</h3>
+      <p style="font-size: 0.82em;">复制粘贴是债，第三次复制时必须停下来抽。</p>
+      <ul style="font-size: 0.78em;">
+        <li>UI 抽组件，逻辑抽 composable / hook</li>
+        <li>常量、工具函数集中放 <code>utils/</code></li>
+        <li>跨项目复用 → 拆 monorepo 包</li>
+      </ul>
+    </div>
+    <div class="card good">
+      <h3>③ 低耦合 高内聚</h3>
+      <p style="font-size: 0.82em;">组件像积木，不像连体婴。</p>
+      <ul style="font-size: 0.78em;">
+        <li><strong>高内聚</strong>：一个组件只干一件事</li>
+        <li><strong>低耦合</strong>：靠 props/events 通信，不直接读父级状态</li>
+        <li>不要在子组件里 <code>$parent</code>、不要在父组件里改子的内部 state</li>
+      </ul>
+    </div>
+  </div>
+
+<pre><code class="language-vue" data-trim>
+&lt;!-- 反例：紧耦合，UserCard 知道太多 --&gt;
+&lt;UserCard :user="user" @save="user.save(); $emit('refresh')" /&gt;
+
+&lt;!-- 正例：UserCard 只发事件，父级决定怎么处理 --&gt;
+&lt;UserCard :user="user" @save="handleSave" /&gt;
+</code></pre>
+
+  <div class="footer-tip">
+    一个组件如果要看 5 层父级才能看懂，它就该被拆。
+  </div>
+  <aside class="notes">
+    三准则是套娃关系：
+    组件化是手段，复用是目的，低耦合高内聚是判断"抽得对不对"的标准。
+    初学者最常见的错：① 不抽组件，整个页面 800 行；② 抽了但耦合死了，组件离不开特定父级。
+  </aside>
+</section>
+
+<!-- ========== 11. 工程化路线 ========== -->
+<section>
+  <span class="corner">12 / 23</span>
+  <h2>工程化：从样式到项目</h2>
+  <p class="lead">没有最优解，只有最匹配项目阶段的解。</p>
+
+  <h3 style="margin-top: 0.4em; font-size: 0.85em;">样式方案</h3>
+  <div class="grid-2" style="gap: 12px;">
+    <div class="card">
+      <h3>原生 CSS / SCSS</h3>
+      <p style="font-size:0.78em">小项目、demo。配合 BEM 命名也能撑很久。</p>
+      <div class="tag-row"><span class="tag">零成本</span><span class="tag">命名靠规约</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://tailwindcss.com/" target="_blank">Tailwind</a></h3>
+      <p style="font-size:0.78em">原子化、不切上下文、设计稿直接抄。配合设计 token 真香。</p>
+      <div class="tag-row"><span class="tag">原子类</span><span class="tag">JIT 编译</span></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 0.6em; font-size: 0.85em;">组件库 & 项目结构</h3>
+  <div class="grid-2" style="gap: 12px;">
+    <div class="card">
+      <h3><a href="https://element-plus.org/zh-CN/" target="_blank">Element Plus</a> · 组件库</h3>
+      <p style="font-size:0.78em">Vue 3 中后台首选。表单、表格、弹窗一应俱全，主题可定制。</p>
+      <div class="tag-row"><span class="tag">Vue 3</span><span class="tag">中后台</span><span class="tag">on-demand</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://pnpm.io/zh/workspaces" target="_blank">Monorepo</a> · 多包管理</h3>
+      <p style="font-size:0.78em">类似 Java 多模块。一个仓库装多个 package，依赖共享、版本统一。</p>
+      <div class="tag-row"><span class="tag"><a href="https://pnpm.io/zh/workspaces" target="_blank">pnpm</a></span><span class="tag"><a href="https://turbo.build/repo" target="_blank">Turborepo</a></span><span class="tag"><a href="https://nx.dev/" target="_blank">Nx</a></span></div>
+    </div>
+  </div>
+
+  <p style="margin-top: 10px; font-size: 0.78em; color: var(--ink-soft);">
+    <strong>本组默认</strong>：Vue 3 + Element Plus + SFC <code>&lt;style scoped&gt;</code>；多产品线工程用 pnpm workspace 拆 monorepo。
+  </p>
+
+  <div class="footer-tip">
+    工程化不是炫技，是让 10 个人改同一个仓库不打架。
+  </div>
+  <aside class="notes">
+    Monorepo 类比：Java 多模块 Maven 工程 = 前端 pnpm workspace。
+    共享依赖、版本统一、跨包重构友好。Element Plus 是 element-ui 的 Vue 3 版，老项目上是 element-ui，新项目直接 Plus。
+  </aside>
+</section>
+
+<!-- ========== 12. DevTools 调试 ========== -->
+<section>
+  <span class="corner">13 / 23</span>
+  <h2><a href="https://www.bilibili.com/video/BV1KM4y1G7EF/" target="_blank">DevTools</a>：别靠改改刷新</h2>
+  <p class="lead">Chrome DevTools 比你想的强，掌握这三板斧就够日常 90%。</p>
+
+  <div class="grid-3" style="gap: 12px;">
+    <div class="card">
+      <h3 style="font-size: 0.9em;">① Elements</h3>
+      <ul style="font-size: 0.68em; line-height: 1.5;">
+        <li><code>:hov</code> — 强制伪类状态</li>
+        <li><code>.cls</code> — 临时改 class</li>
+        <li>Layout 开 grid/flex 标尺</li>
+        <li>Computed 看覆盖链</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="font-size: 0.9em;">② Console</h3>
+      <p style="font-size: 0.65em; color: var(--ink-mute); margin: 0 0 4px 0;">快捷变量</p>
+      <ul style="font-size: 0.65em; margin-bottom: 6px; line-height: 1.5;">
+        <li><code>$_</code> 上一条结果</li>
+        <li><code>$0</code> 选中元素</li>
+        <li><code>$()</code> / <code>$$()</code> 选择器</li>
+      </ul>
+      <p style="font-size: 0.65em; color: var(--ink-mute); margin: 0 0 4px 0;">输出方法</p>
+      <ul style="font-size: 0.65em; line-height: 1.5;">
+        <li><code>warn</code> / <code>table</code> / <code>trace</code></li>
+        <li><code>time</code> / <code>timeEnd</code> 计时</li>
+        <li><code>group</code> / <code>groupEnd</code> 分组</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="font-size: 0.9em;">③ Network / Performance</h3>
+      <ul style="font-size: 0.68em; line-height: 1.5;">
+        <li>Network 看请求、响应、耗时</li>
+        <li>Performance 录制看瓶颈(layout/paint)</li>
+        <li>Rendering 开 Paint flashing</li>
+        <li>Cmd+Shift+P → Capture screenshot 截长图</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top: 10px; font-size: 0.78em; color: var(--ink-soft);">
+    <strong>AI 也能用 DevTools</strong> — 装 <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank">chrome-devtools-mcp</a> 让 Claude Code 直接控制浏览器调试、录 Performance、抓包。
+  </p>
+
+  <pre><code class="language-css" data-trim>
+/* 调试神器：可视化所有元素的边界 */
+* { outline: 1px solid red; }
+
+/* 看谁是溢出元凶 */
+* { outline: 1px solid red; outline-offset: -1px; }
+  </code></pre>
+
+  <div class="footer-tip">
+    遇到样式问题先打开 Computed,90% 一眼看出来谁覆盖了谁。
+  </div>
+</section>
+
+<!-- ========== 14. CSS 性能 ========== -->
+<section>
+  <span class="corner">14 / 23</span>
+  <h2>CSS 性能：别瞎优化</h2>
+  <p class=「lead」>现代浏览器很聪明，大部分「优化」都是迷信。但有几条是真的。</p>
+
+  <div class="grid-2">
+    <div class="card good">
+      <h3>✓ 真有用的</h3>
+      <ul style="font-size: 0.85em;">
+        <li>动画只动 <code>transform</code> 和 <code>opacity</code> — 走 GPU,不触发 layout/paint</li>
+        <li>大列表用 <code>content-visibility: auto</code> 让浏览器跳过屏外渲染</li>
+        <li>关键 CSS 内联到 <code>&lt;head&gt;</code>,首屏不等外部样式表</li>
+        <li>字体加 <code>font-display: swap</code> 避免 FOIT</li>
+      </ul>
+    </div>
+    <div class="card bad">
+      <h3>✗ 别再相信的</h3>
+      <ul style="font-size: 0.85em;">
+        <li>「选择器从右往左匹配，所以要短」 — 现代浏览器开销可忽略</li>
+        <li>「*  通配符性能差」 — 也不会差</li>
+        <li><code>will-change</code> 乱加 — 反而吃内存，只在<strong>动画前一刻</strong>加，完成后移除</li>
+        <li>过早预渲染、过早 lazy load — 测了再说</li>
+      </ul>
+    </div>
+  </div>
+
+<pre><code class="language-css" data-trim>
+/* 动画的好与坏 */
+.bad  { animation: shake 1s; }
+@keyframes shake { from { left: 0 } to { left: 10px } }   /* 触发 layout,卡 */
+
+.good { animation: shake 1s; }
+@keyframes shake { from { transform: translateX(0) } to { transform: translateX(10px) } }
+</code></pre>
+
+  <div class="footer-tip">
+    不要凭感觉优化。开 Performance 面板录 5 秒，数据会告诉你真实瓶颈。
+  </div>
+</section>
+
+<!-- ========== Part 2 分隔页 ========== -->
+<section data-background-gradient="linear-gradient(135deg, #0c4a6e 0%, #4c1d95 100%)">
+  <div style="text-align:center; padding-top: 80px;">
+    <span class="pill">PART 2</span>
+    <h1 style=「margin-top: 0.4em; font-size: 3em;」>Claude Code 工作流</h1>
+    <p class=「lead muted」>不是补全工具，是协作者 — 但要会带它干活。</p>
+  </div>
+</section>
+
+<!-- ========== 15. 心智模型 ========== -->
+<section>
+  <span class="corner">15 / 23</span>
+  <h2>心智模型：它不是补全</h2>
+  <p class=「lead」>Claude Code 是<strong>能读代码、能跑命令、能改文件</strong>的同事，不是按 Tab 出代码的插件。</p>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>① 意图</h3>
+      <p style=「font-size:0.85em」>你要什么?<br>把目标说清，别让它猜。</p>
+      <p class=「muted」 style=「font-size: 0.75em;」>「加个登录按钮」 → 「在 Header.vue 右上角加登录按钮，点击跳 /login,样式跟现有 nav 按钮一致」</p>
+    </div>
+    <div class="card">
+      <h3>② 上下文</h3>
+      <p style=「font-size:0.85em」>它需要看哪些文件?<br>给路径，别让它满项目搜。</p>
+      <p class=「muted」 style=「font-size: 0.75em;」>CLAUDE.md / 指定文件 / 子 agent 探索 — 都是给上下文。</p>
+    </div>
+    <div class="card">
+      <h3>③ 验证</h3>
+      <p style=「font-size:0.85em」>怎么算做完?<br>说清验收标准，它会自己跑。</p>
+      <p class=「muted」 style=「font-size: 0.75em;」>「跑 npm test 通过」「npm run dev 后页面能点击不报错」</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 14px; text-align: center; font-size: 1.1em; color: #fde68a;">
+    输出质量 = f(意图清晰度 × 上下文完整度 × 验证可执行性)
+  </p>
+
+  <div class="footer-tip">
+    这三件事少一件，产出就要打折。把这三件事说清，基本上一遍就成。
+  </div>
+  <aside class="notes">
+    很多人吐槽 Claude Code 「不靠谱」，根因往往是上面三件事缺一两件。
+    比如只说「修一下这个 bug」，不给文件、不给复现步骤，出来的东西不对再正常不过。
+  </aside>
+</section>
+
+<!-- ========== 16. 提示词对照 ========== -->
+<section>
+  <span class="corner">16 / 23</span>
+  <h2>提示词：模糊 vs 具体</h2>
+
+  <div class="grid-2">
+    <div class="card bad">
+      <h3>✗ 反例</h3>
+<pre><code data-trim>
+帮我加个搜索功能
+</code></pre>
+      <p style=「font-size: 0.85em;」>它要猜：加在哪?搜什么?用什么 UI?跟谁交互?后端有没有接口?<br>
+      产出大概率不对，你再返工 → 来回扯皮 → 不如自己写。</p>
+    </div>
+    <div class="card good">
+      <h3>✓ 正例</h3>
+<pre><code data-trim>
+在 Header.vue 顶部搜索框里加节流防抖，输入停 300ms 后调 useUserSearch(),
+loading 时显示 spinner,无结果显示
+「未找到 {query}」。
+
+参考：src/composables/useUserSearch.ts
+样式跟现有 .nav-input 一致。
+跑通后用 npm run dev 自检。
+</code></pre>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 12px;">
+    <h3>4 个万能句式</h3>
+    <ul style="font-size: 0.85em; columns: 2; column-gap: 30px;">
+      <li><strong>给坐标</strong>:在 X 文件 / Y 函数里改</li>
+      <li><strong>给参考</strong>:照 Z 模块的写法</li>
+      <li><strong>给边界</strong>:不要动 A、不要引入 B</li>
+      <li><strong>给验收</strong>:跑某命令通过 / 浏览器看效果</li>
+    </ul>
+  </div>
+
+  <div class="footer-tip">
+    花 2 分钟描述，能省 20 分钟返工。提示词是杠杆。
+  </div>
+</section>
+
+<!-- ========== 17. CLAUDE.md ========== -->
+<section>
+  <span class="corner">17 / 23</span>
+  <h2>CLAUDE.md：项目说明书，写一次省一万次</h2>
+  <p class=「lead」>放项目根目录，Claude Code 每次会话自动读。</p>
+
+<pre><code class="language-markdown" data-trim>
+# Project: 讯飞星火管理后台
+
+## 技术栈
+- Vue 3 + Vite + TypeScript
+- Pinia 状态管理，Element Plus 组件库
+- Node 版本见 .nvmrc(18.19.0)
+
+## 常用命令
+- 开发：`npm run dev`(端口 5173)
+- 构建：`npm run build`
+- 测试：`npm run test:unit`
+- 类型：`npm run type-check`
+
+## 目录约定
+- src/views/        — 路由页面
+- src/components/   — 通用组件，SFC + scoped style
+- src/composables/  — useXxx hooks
+- src/api/          — axios 封装，统一走 request()
+
+## 风格
+- 组件名 PascalCase,文件名跟组件同名
+- props 必须类型 + 默认值
+- 不要用 any,不会写就用 unknown 加类型守卫
+- 提交前跑 npm run lint
+</code></pre>
+
+  <div class="footer-tip">
+    写 CLAUDE.md 等于一次性教会它你的项目长啥样，后面所有对话都受益。
+  </div>
+  <aside class="notes">
+    全局 ~/.claude/CLAUDE.md 写个人偏好(比如 Java 用 sdkman、Node 用 nvm)。
+    项目根 CLAUDE.md 写项目特异性约定。两者会被合并加载。
+  </aside>
+</section>
+
+<!-- ========== 18. Plan 模式 + 子 agent ========== -->
+<section>
+  <span class="corner">18 / 23</span>
+  <h2>Plan 模式 + 子 agent：复杂任务的两件套</h2>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Plan 模式</h3>
+      <p style=「font-size: 0.85em;」>按 <kbd>Shift+Tab</kbd> 进入。它<strong>只读不写</strong>,先给你一份完整方案，你审完再放行。</p>
+      <ul style="font-size: 0.82em;">
+        <li>多文件改动、不熟的代码、有风险的操作 — <strong>必走</strong></li>
+        <li>plan 不对的话直接驳回，比改了再回滚便宜</li>
+        <li>plan 文件留档，后面能回看</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Explore 子 agent</h3>
+      <p style=「font-size: 0.85em;」>遇到大代码库别让主对话满屏读文件，派子 agent 去探。</p>
+<pre><code data-trim>
+「用 Explore agent 看下
+ 登录流程经过哪些文件，列出关键函数和调用链。「
+</code></pre>
+      <p class=「muted」 style=「font-size: 0.75em;」>子 agent 读完只回结论，主对话上下文不被污染。</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 12px;">
+    <h3>Plan 模式典型流程</h3>
+    <ol style="font-size: 0.82em; margin: 0;">
+      <li>Shift+Tab 进 plan → 描述需求</li>
+      <li>它探索代码、问关键问题、写出计划</li>
+      <li>你看 plan,有疑问追问、有偏差让它改</li>
+      <li>OK 了让它退出 plan 开始实施</li>
+      <li>实施完看 diff,不对就回退</li>
+    </ol>
+  </div>
+
+  <div class="footer-tip">
+    没想清楚就让它写代码，等于让你看一份没需求文档的 PR。
+  </div>
+</section>
+
+<!-- ========== 19. 斜杠命令 / Skill ========== -->
+<section>
+  <span class="corner">19 / 23</span>
+  <h2>斜杠命令 &amp; Skill：把高频操作沉淀成一行</h2>
+  <p class="lead">本组已经接好的、你打一个 <code>/</code> 就能用的能力。</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>项目内置斜杠命令</h3>
+      <ul style="font-size: 0.85em;">
+        <li><code>/commit</code> — 智能提交，只动当前会话改的文件</li>
+        <li><code>/ci dev|test|online &lt;project&gt;</code> — 触发 Jenkins 构建</li>
+        <li><code>/check &lt;env&gt; &lt;project&gt;</code> — 发布后 SSH 自检</li>
+        <li><code>/review</code> — 代码评审</li>
+        <li><code>/security-review</code> — 安全检查</li>
+        <li><code>/init</code> — 给项目生成 CLAUDE.md</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>常用 Skill</h3>
+      <ul style="font-size: 0.85em;">
+        <li><code>verify</code> — 真跑一遍验证改动</li>
+        <li><code>code-review</code> — 自动 review 当前 diff</li>
+        <li><code>simplify</code> — 找重复/冗余并简化</li>
+        <li><code>deep-research</code> — 多源调研报告</li>
+        <li><code>run</code> — 启动项目并截图验证</li>
+        <li><code>jenkins-onboard</code> — 新工程接 CI/CD</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top: 12px; font-size: 0.85em; color: var(--ink-soft);">
+    <strong>建议</strong>:你自己重复做的事，问下能不能写成 skill。下次一行触发。
+  </p>
+
+  <div class="footer-tip">
+    打 / 看下都有啥，说不定你正在做的事人家已经写好了。
+  </div>
+</section>
+
+<!-- ========== 20. MCP / CodeGraph ========== -->
+<section>
+  <span class="corner">20 / 23</span>
+  <h2>MCP 工具：CodeGraph 比 grep 准</h2>
+  <p class=「lead」>MCP = Model Context Protocol,把外部工具接成 Claude Code 的「插件」。</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>CodeGraph 能干啥</h3>
+      <ul style="font-size: 0.85em;">
+        <li>谁调用了这个方法 — <code>callers</code></li>
+        <li>这个方法调用了谁 — <code>callees</code></li>
+        <li>改这个会影响哪些地方 — <code>impact</code></li>
+        <li>从一个符号出发探索 — <code>explore</code></li>
+        <li>按名字找 class / function — <code>search</code></li>
+      </ul>
+      <p class=「muted」 style=「font-size: 0.75em;」>基于 SQLite 知识图谱，毫秒级响应，比 grep 准、不重复读文件。</p>
+    </div>
+    <div class="card">
+      <h3>怎么用</h3>
+<pre><code data-trim>
+# 项目根目录初始化(只需一次)
+codegraph init -i
+
+# 之后 Claude Code 会自动用
+「找出 UserService.login 的所有调用方」
+「改 OrderMapper 的 deleteById,
+ 评估影响面「
+</code></pre>
+      <p class=「muted」 style=「font-size: 0.75em;」>没初始化的项目就退化为 grep。</p>
+    </div>
+  </div>
+
+  <p style="margin-top: 10px; font-size: 0.85em; color: var(--ink-soft);">
+    其他常用 MCP:<strong>MasterGo</strong> 把设计稿一键转 HTML/Vue 代码；<strong>agent-browser</strong> 让 Claude Code 真在浏览器里点页面验证。
+  </p>
+
+  <div class="footer-tip">
+    多模块 Java 工程查调用链，CodeGraph 一个命令顶 IDEA Find Usages。
+  </div>
+</section>
+
+<!-- ========== 19. 效率工具大礼包 ========== -->
+<section>
+  <span class="corner">21 / 23</span>
+  <h2>效率工具大礼包</h2>
+  <p class=「lead」>会话环境装好这些，效率 × 2。</p>
+
+  <div class="grid-2" style="gap: 14px;">
+    <div class="card">
+      <h3>CodeGraph — 调用图谱</h3>
+      <p style=「font-size: 0.85em;」>SQLite 知识图谱，毫秒级查调用关系。比 grep 准、比 LSP 快。</p>
+      <pre><code data-trim>
+codegraph init -i   # 项目根目录初始化
+# 之后 Claude Code 自动调用
+      </code></pre>
+      <p class=「muted」 style=「font-size: 0.75em;」>支持 Java/TS/Go/Python,多模块工程神器。</p>
+    </div>
+
+    <div class="card">
+      <h3>claude-hud — 状态栏</h3>
+      <p style=「font-size: 0.85em;」>把 token 用量、模型、时间戳显示在 Claude Code 界面底部，实时看花了多少 token。</p>
+      <pre><code data-trim>
+/claude-hud:setup   # 一键配置
+# 重启 Claude Code 生效
+      </code></pre>
+      <p class=「muted」 style=「font-size: 0.75em;」>预算控制党必备。</p>
+    </div>
+
+    <div class="card">
+      <h3>agent-browser — 浏览器自动化</h3>
+      <p style=「font-size: 0.85em;」>让 Claude Code 真在浏览器里点页面、截图、填表单，验证改动是否生效。</p>
+      <pre><code data-trim>
+npm install -g agent-browser
+agent-browser install
+# 用法:/verify 会自动调
+      </code></pre>
+      <p class=「muted」 style=「font-size: 0.75em;」>前端改动验证、E2E 自动化。</p>
+    </div>
+
+    <div class="card">
+      <h3>其他推荐</h3>
+      <ul style="font-size: 0.85em;">
+        <li><strong>MasterGo MCP</strong> — 设计稿一键转代码</li>
+        <li><strong>Git MCP</strong> — 增强 git 历史查询</li>
+        <li><strong>Filesystem MCP</strong> — 批量文件操作</li>
+        <li><strong>Postgres MCP</strong> — 数据库查询与 schema 提示</li>
+      </ul>
+      <p class=「muted」 style=「font-size: 0.75em;」>去 <a href=「https://github.com/anthropics/anthropic-cookbook/tree/main/mcp」 target=「_blank」>anthropic-cookbook/mcp</a> 找更多。</p>
+    </div>
+  </div>
+
+  <div class="footer-tip">
+    这些工具都是 MCP 协议，装一次永久生效。下次开新项目自动有。
+  </div>
+  <aside class="notes">
+    重点：CodeGraph 对多模块 Java 工程是质变级提升，能跨模块追调用链；
+    claude-hud 让你随时知道这轮对话花了多少 token,避免超预算。
+  </aside>
+</section>
+
+<!-- ========== 20. 避坑清单 ========== -->
+<section>
+  <span class="corner">22 / 23</span>
+  <h2>避坑清单：把它当实习同事带</h2>
+
+  <div class="grid-2" style="gap: 14px;">
+    <div class="card good">
+      <h3>✓ 应该做</h3>
+      <ul style="font-size: 0.85em;">
+        <li><strong>永远看 diff</strong> — 提交前过一遍它改了啥</li>
+        <li><strong>复杂任务先 plan</strong> — Shift+Tab</li>
+        <li><strong>给具体路径和命令</strong> — 别让它满项目找</li>
+        <li><strong>验证改动</strong> — 让它跑测试 / 起 dev server</li>
+        <li><strong>常 /commit 小步快跑</strong> — 出错好回退</li>
+      </ul>
+    </div>
+    <div class="card bad">
+      <h3>✗ 别做</h3>
+      <ul style="font-size: 0.85em;">
+        <li><strong>无脑 yes</strong> — 删除/重置/force push 必须自己确认</li>
+        <li><strong>在脏工作区让它干活</strong> — 先 commit 或 stash</li>
+        <li><strong>让它跑 prod 命令</strong> — 部署、发布要人工把关</li>
+        <li><strong>一次给十个需求</strong> — 拆开，每次一件</li>
+        <li><strong>跑了一天没看过</strong> — 长任务也要中途瞄两眼</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 12px; border-color: rgba(251, 191, 36, 0.4);">
+    <h3 style=「color: var(--warn);」>🚨 一条铁律</h3>
+    <p style="font-size: 0.9em; margin: 0;">
+      <strong>它会犯错，你要兜底。</strong>它能跑命令、能改文件、能 git push,所以你必须在<strong>合并到 main / 推到测试环境之前</strong>看一眼 diff 和命令。AI 出错的成本 = 你能不能及时发现。
+    </p>
+  </div>
+
+  <div class="footer-tip">
+    把它当一个聪明但缺乏项目经验的实习同事，你 review 的姿势就对了。
+  </div>
+</section>
+
+<!-- ========== 21. 下一步 & Q&A ========== -->
+<section>
+  <span class="corner">23 / 23</span>
+  <h2>下一步 &amp; Q&amp;A</h2>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>这周可以做的</h3>
+      <ul style="font-size: 0.85em;">
+        <li>给你手上的项目写一份 <code>CLAUDE.md</code></li>
+        <li>用 plan 模式做一个跨 3 个文件的改动</li>
+        <li>把当前样式里所有 <code>!important</code> 列出来，挑一个干掉</li>
+        <li>在某个组件上试试 <code>:has()</code> 和容器查询</li>
+        <li>跑一次 <code>codegraph init</code>,体验 callers/impact</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>资源</h3>
+      <ul style="font-size: 0.85em;">
+        <li><a href=「https://web.dev/learn/css/」>web.dev/learn/css</a> — Google 的现代 CSS 教程</li>
+        <li><a href=「https://defensivecss.dev/」>defensivecss.dev</a> — 防御式 CSS 写法</li>
+        <li><a href=「https://every-layout.dev/」>every-layout.dev</a> — 用 CSS 做布局原语</li>
+        <li><a href="https://docs.claude.com/en/docs/claude-code">docs.claude.com / claude-code</a></li>
+        <li><a href="https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局教程</a></li>
+        <li><a href="https://ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html">Grid 布局教程</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <p style="font-size: 1.4em; color: #f8fafc;">
+      AI 放大的是你的<strong style="color: #fde68a; font-size: 1.1em;">能力</strong>，加速你的学习，<br>
+      但绝对不是替代你工作
+    </p>
+    <p class="muted" style="font-size: 0.85em; margin-top: 8px;">
+      你不了解的事情让 AI 做，只会更糟糕 — <br>
+      它是放大器，不是魔法棒
+    </p>
+    <p class="muted">— Thanks —</p>
+  </div>
+
+  <aside class="notes">
+    留 5-10 分钟答疑。鼓励大家把自己项目里现存的痛点拿出来，现场对着改一段。
+  </aside>
+</section>
+
+
+
+
+
+
+
+</div>
+</div>
+
+<!-- INSERT_SCRIPTS_HERE -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/zoom/zoom.js"></script>
+
+<script>
+  // 主题切换 demo 用
+  function setTheme(name) {
+    var el = document.getElementById('theme-demo');
+    if (!el) return;
+    el.dataset.theme = name;
+    if (name === 'light') {
+      el.style.cssText = '--bg:#ffffff;--fg:#0f172a;--primary:#6366f1;--card:#f1f5f9;background:var(--bg);color:var(--fg);padding:20px;border-radius:12px;transition:all .25s ease;';
+    } else if (name === 'candy') {
+      el.style.cssText = '--bg:#fff7fb;--fg:#831843;--primary:#ec4899;--card:#fce7f3;background:var(--bg);color:var(--fg);padding:20px;border-radius:12px;transition:all .25s ease;';
+    } else {
+      el.style.cssText = '--bg:#0f172a;--fg:#e2e8f0;--primary:#a855f7;--card:#1e293b;background:var(--bg);color:var(--fg);padding:20px;border-radius:12px;transition:all .25s ease;';
+    }
+  }
+
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'slide',
+    backgroundTransition: 'fade',
+    width: 1366,
+    height: 900,
+    margin: 0.04,
+    minScale: 0.2,
+    maxScale: 2.0,
+    controls: true,
+    progress: true,
+    plugins: [ RevealHighlight, RevealNotes, RevealZoom ]
+  });
+</script>
+
+
+</body>
+</html>
