@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 import { useRouter } from 'vue-router'
 import AppIcon from '../base/AppIcon.vue'
 import logoUrl from '../../assets/logo.png'
@@ -16,6 +16,18 @@ const defaultRouteByLabel: Partial<Record<string, string>> = {
 
 const router = useRouter()
 const expandedItems = ref<Set<string>>(new Set())
+
+watchEffect(() => {
+  const defaultExpanded = new Set<string>()
+
+  props.items.forEach((item) => {
+    if (item.expanded || item.children?.some((child) => child.active)) {
+      defaultExpanded.add(item.label)
+    }
+  })
+
+  expandedItems.value = defaultExpanded
+})
 
 const toggleExpand = (label: string) => {
   if (expandedItems.value.has(label)) {
