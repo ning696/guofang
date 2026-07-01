@@ -21,7 +21,7 @@ const baseNavItems: NavItem[] = [
       { label: '分类管理', icon: 'record', to: '/category-management' },
       { label: '指标管理', icon: 'record', to: '/indicator-management' },
       { label: '选项管理', icon: 'record' },
-      { label: '评价报表', icon: 'data' },
+      { label: '评价报表', icon: 'data', to: '/evaluation-report' },
       { label: '评价记录', icon: 'record' },
     ],
   },
@@ -58,3 +58,5 @@ export const templateManagementNavItems = createNavItems('', '模板管理')
 export const categoryManagementNavItems = createNavItems('', '分类管理')
 
 export const indicatorManagementNavItems = createNavItems('', '指标管理')
+
+export const evaluationReportNavItems = createNavItems('', '评价报表')
